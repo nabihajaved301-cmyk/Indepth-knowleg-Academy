@@ -5,13 +5,11 @@
     <meta name="google-site-verification" content="zTVeMUaWr16lrKhHOxdeNxW-dL6eX5S3ejV5RoOcX5Y" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Search Console Verification Tag -->
-    
     
     <title>Indepth Knowledge Academy</title>
         
     <!-- Browser Tab Icon (Favicon) -->
-    <link class="favicon" rel="icon" type="image/jpeg" href="your-backgroun.jpg.jpeg">
+    <link class="favicon" rel="icon" type="image/png" href="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=100&q=80">
         
     <style>
         /* Modern Reset & Base Styles */
@@ -29,6 +27,9 @@
             --accent-pink: #e0b0a8;
             --pure-white: #ffffff;
             --light-bg: #faf8f7;
+        }
+        html {
+            scroll-behavior: smooth;
         }
         body {
             background-color: var(--light-bg);
@@ -50,33 +51,30 @@
             display: flex;
             align-items: center;
         }
-        /* Logo styling for white circular emblem to look crisp on black header */
         .logo img {
-            height: 65px;
+            height: 50px;
             width: auto;
             display: block;
             object-fit: contain;
             border-radius: 4px;
-            background-color: var(--pure-white);
-            padding: 2px;
         }
         nav a {
             color: var(--pure-white);
             text-decoration: none;
             margin-left: 2rem;
             font-size: 0.95rem;
+            font-weight: 500;
             transition: color 0.3s;
         }
         nav a:hover {
             color: var(--soft-pink);
         }
-        /* Modern Hero Section with Education/Library Background Image */
+        /* Modern Hero Section */
         .hero {
             background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(61, 43, 31, 0.8)), 
                         url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80');
             background-size: cover;
             background-position: center;
-            background-attachment: scroll;
             color: var(--pure-white);
             padding: 8rem 10%;
             display: flex;
@@ -238,7 +236,6 @@
             border-color: var(--accent-pink);
             background-color: var(--pure-white);
         }
-        /* Styling for File Input specifically */
         .form-group input[type="file"] {
             padding: 0.6rem;
             background-color: #fff;
@@ -269,7 +266,7 @@
         }
         /* Notes Table Container */
         .notes-table-container {
-            margin-top: 2rem;
+            margin-top: 2.5rem;
             background: var(--pure-white);
             padding: 2rem;
             border-radius: 8px;
@@ -282,10 +279,16 @@
             border-bottom: 2px solid var(--soft-pink);
             padding-bottom: 0.5rem;
         }
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
         .notes-table {
             width: 100%;
             border-collapse: collapse;
             text-align: left;
+            min-width: 500px;
         }
         .notes-table th, .notes-table td {
             padding: 1rem;
@@ -309,6 +312,7 @@
             font-weight: bold;
             font-size: 0.85rem;
             transition: background-color 0.2s;
+            display: inline-block;
         }
         .download-btn:hover {
             background-color: var(--warm-tan);
@@ -345,7 +349,7 @@
             color: var(--accent-pink);
             font-weight: 600;
         }
-        /* Responsive */
+        /* Responsive CSS */
         @media (max-width: 992px) {
             .hero {
                 padding: 6rem 5%;
@@ -359,9 +363,16 @@
             header {
                 flex-direction: column;
                 gap: 1rem;
+                padding: 15px 5%;
+            }
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
             }
             nav a {
-                margin: 0 1rem;
+                margin: 0;
             }
             .hero h1 {
                 font-size: 2.2rem;
@@ -373,7 +384,7 @@
                 padding: 2rem 1.5rem;
             }
             .notes-table th, .notes-table td {
-                padding: 0.5rem;
+                padding: 0.8rem 0.5rem;
                 font-size: 0.85rem;
             }
         }
@@ -383,8 +394,8 @@
     <!-- Header Navigation -->
     <header>
         <div class="logo">
-            <!-- Official Academy Logo -->
-            <img src="your-backgroun.jpg.jpeg" alt="Indepth Knowledge Academy Logo">
+            <!-- Online logo placeholder that works out of the box -->
+            <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=150&q=80" alt="Indepth Knowledge Academy Logo">
         </div>
         <nav>
             <a href="#home">Home</a>
@@ -410,11 +421,10 @@
         <div class="class-row">
             <h3 class="class-heading">Class 9th</h3>
             <span class="class-badge">SSC Part I</span>
-                        <div class="subject-grid">
-                <!-- Physics Column -->
+            <div class="subject-grid">
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="physics.jpg.jfif" alt="9th Physics">
+                        <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=400&q=80" alt="9th Physics">
                     </div>
                     <div class="subject-details">
                         <h4>Physics</h4>
@@ -422,10 +432,9 @@
                     </div>
                 </div>
 
-                <!-- Chemistry Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="chemistry.jpg.jfif" alt="9th Chemistry">
+                        <img src="https://images.unsplash.com/photo-1532187863486-abf9d39d66e8?auto=format&fit=crop&w=400&q=80" alt="9th Chemistry">
                     </div>
                     <div class="subject-details">
                         <h4>Chemistry</h4>
@@ -433,10 +442,9 @@
                     </div>
                 </div>
 
-                <!-- Biology Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="Biology.jpg.jfif" alt="9th Biology">
+                        <img src="https://images.unsplash.com/photo-1530026405186-ed1ea0ac7a63?auto=format&fit=crop&w=400&q=80" alt="9th Biology">
                     </div>
                     <div class="subject-details">
                         <h4>Biology</h4>
@@ -444,10 +452,9 @@
                     </div>
                 </div>
 
-                <!-- Computer Science Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="computer science.jpg.jfif" alt="9th Computer Science">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="9th Computer Science">
                     </div>
                     <div class="subject-details">
                         <h4>Computer Science</h4>
@@ -461,11 +468,10 @@
         <div class="class-row">
             <h3 class="class-heading">Class 10th</h3>
             <span class="class-badge">SSC Part II</span>
-                        <div class="subject-grid">
-                <!-- Physics Column -->
+            <div class="subject-grid">
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="10th-Physics.jpg.jfif" alt="10th Physics">
+                        <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=400&q=80" alt="10th Physics">
                     </div>
                     <div class="subject-details">
                         <h4>Physics</h4>
@@ -473,10 +479,9 @@
                     </div>
                 </div>
 
-                <!-- Chemistry Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="10th-chemistry.jpg.jfif" alt="10th Chemistry">
+                        <img src="https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?auto=format&fit=crop&w=400&q=80" alt="10th Chemistry">
                     </div>
                     <div class="subject-details">
                         <h4>Chemistry</h4>
@@ -484,10 +489,9 @@
                     </div>
                 </div>
 
-                <!-- Biology Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="10th-Biology.jpg.jfif" alt="10th Biology">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=400&q=80" alt="10th Biology">
                     </div>
                     <div class="subject-details">
                         <h4>Biology</h4>
@@ -495,10 +499,9 @@
                     </div>
                 </div>
 
-                <!-- Computer Science Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="10th-computer science.jpg.jfif" alt="10th Computer Science">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=80" alt="10th Computer Science">
                     </div>
                     <div class="subject-details">
                         <h4>Computer Science</h4>
@@ -512,11 +515,10 @@
         <div class="class-row">
             <h3 class="class-heading">O-Level</h3>
             <span class="class-badge">Cambridge / Edexcel</span>
-                        <div class="subject-grid">
-                <!-- Physics Column -->
+            <div class="subject-grid">
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="o-physic.jpg.jfif" alt="O-Level Physics">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=400&q=80" alt="O-Level Physics">
                     </div>
                     <div class="subject-details">
                         <h4>Physics</h4>
@@ -524,10 +526,9 @@
                     </div>
                 </div>
 
-                <!-- Chemistry Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="o-chemistry.jpg.jfif" alt="O-Level Chemistry">
+                        <img src="https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&w=400&q=80" alt="O-Level Chemistry">
                     </div>
                     <div class="subject-details">
                         <h4>Chemistry</h4>
@@ -535,10 +536,9 @@
                     </div>
                 </div>
 
-                <!-- Biology Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="o-biology.jpg" alt="O-Level Biology">
+                        <img src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?auto=format&fit=crop&w=400&q=80" alt="O-Level Biology">
                     </div>
                     <div class="subject-details">
                         <h4>Biology</h4>
@@ -546,10 +546,9 @@
                     </div>
                 </div>
 
-                <!-- Computer Science Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="o-computer science.jpg.jfif" alt="O-Level Computer Science">
+                        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=400&q=80" alt="O-Level Computer Science">
                     </div>
                     <div class="subject-details">
                         <h4>Computer Science</h4>
@@ -563,11 +562,10 @@
         <div class="class-row">
             <h3 class="class-heading">FSc Part-I</h3>
             <span class="class-badge">HSSC Part I (Grade 11)</span>
-                        <div class="subject-grid">
-                <!-- Physics Column -->
+            <div class="subject-grid">
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="11th-physics.jpg.jfif" alt="11th Physics">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=400&q=80" alt="11th Physics">
                     </div>
                     <div class="subject-details">
                         <h4>Physics</h4>
@@ -575,10 +573,9 @@
                     </div>
                 </div>
 
-                <!-- Chemistry Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="11th-chemistry.jpg.jfif" alt="11th Chemistry">
+                        <img src="https://images.unsplash.com/photo-1512462249780-c57c52407b22?auto=format&fit=crop&w=400&q=80" alt="11th Chemistry">
                     </div>
                     <div class="subject-details">
                         <h4>Chemistry</h4>
@@ -586,10 +583,9 @@
                     </div>
                 </div>
 
-                <!-- Biology Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="11th-biology.jpg.jfif" alt="11th Biology">
+                        <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=400&q=80" alt="11th Biology">
                     </div>
                     <div class="subject-details">
                         <h4>Biology</h4>
@@ -597,10 +593,9 @@
                     </div>
                 </div>
 
-                <!-- Computer Science Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="11th-computer science.jpg.jfif" alt="11th Computer Science">
+                        <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=400&q=80" alt="11th Computer Science">
                     </div>
                     <div class="subject-details">
                         <h4>Computer Science</h4>
@@ -614,11 +609,10 @@
         <div class="class-row">
             <h3 class="class-heading">A-Level</h3>
             <span class="class-badge">Advanced Level (AS & A2)</span>
-                        <div class="subject-grid">
-                <!-- Physics Column -->
+            <div class="subject-grid">
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="a-physics.jpg.jfif" alt="A-Level Physics">
+                        <img src="https://images.unsplash.com/photo-1607988795691-3d0147b43231?auto=format&fit=crop&w=400&q=80" alt="A-Level Physics">
                     </div>
                     <div class="subject-details">
                         <h4>Physics</h4>
@@ -626,10 +620,9 @@
                     </div>
                 </div>
 
-                <!-- Chemistry Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="a-chemistry.jpg.jfif" alt="A-Level Chemistry">
+                        <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=400&q=80" alt="A-Level Chemistry">
                     </div>
                     <div class="subject-details">
                         <h4>Chemistry</h4>
@@ -637,10 +630,9 @@
                     </div>
                 </div>
 
-                <!-- Biology Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="a-Biology.jpg.jfif" alt="A-Level Biology">
+                        <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=400&q=80" alt="A-Level Biology">
                     </div>
                     <div class="subject-details">
                         <h4>Biology</h4>
@@ -648,10 +640,9 @@
                     </div>
                 </div>
 
-                <!-- Computer Science Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="a-computer science.jpg" alt="A-Level Computer Science">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=400&q=80" alt="A-Level Computer Science">
                     </div>
                     <div class="subject-details">
                         <h4>Computer Science</h4>
@@ -665,11 +656,10 @@
         <div class="class-row">
             <h3 class="class-heading">FSc Part-II</h3>
             <span class="class-badge">HSSC Part II (Grade 12)</span>
-                        <div class="subject-grid">
-                <!-- Physics Column -->
+            <div class="subject-grid">
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="12th-physics.jpg.jfif" alt="12th Physics">
+                        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=400&q=80" alt="12th Physics">
                     </div>
                     <div class="subject-details">
                         <h4>Physics</h4>
@@ -677,10 +667,9 @@
                     </div>
                 </div>
 
-                <!-- Chemistry Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="12th-chemistry.jpg.jfif" alt="12th Chemistry">
+                        <img src="https://images.unsplash.com/photo-1617155093730-a8bf47be792d?auto=format&fit=crop&w=400&q=80" alt="12th Chemistry">
                     </div>
                     <div class="subject-details">
                         <h4>Chemistry</h4>
@@ -688,10 +677,9 @@
                     </div>
                 </div>
 
-                <!-- Biology Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="12-biology.jpg.jfif" alt="12th Biology">
+                        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=400&q=80" alt="12th Biology">
                     </div>
                     <div class="subject-details">
                         <h4>Biology</h4>
@@ -699,10 +687,9 @@
                     </div>
                 </div>
 
-                <!-- Computer Science Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
-                        <img src="12-computer science.jpg.jfif" alt="12th Computer Science">
+                        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=400&q=80" alt="12th Computer Science">
                     </div>
                     <div class="subject-details">
                         <h4>Computer Science</h4>
@@ -759,30 +746,33 @@
             <!-- Dynamic Download Area for Students -->
             <div class="notes-table-container">
                 <h3>Download Study Resources</h3>
-                <table class="notes-table">
-                    <thead>
-                        <tr>
-                            <th>Class</th>
-                            <th>Subject</th>                            <th>Topic</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody id="notes-list-body">
-                        <!-- Default placeholder notes -->
-                        <tr>
-                            <td>Class 9th</td>
-                            <td>Biology</td>
-                            <td>Cell Membrane & Cell Theory Notes</td>
-                            <td><a href="#" class="download-btn" onclick="alert('Downloading sample file...')">Download Docx</a></td>
-                        </tr>
-                        <tr>
-                            <td>FSc Part-I</td>
-                            <td>Chemistry</td>
-                            <td>Chemical Shift and Spectroscopy Basics</td>
-                            <td><a href="#" class="download-btn" onclick="alert('Downloading sample file...')">Download PDF</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                    <table class="notes-table">
+                        <thead>
+                            <tr>
+                                <th>Class</th>
+                                <th>Subject</th>
+                                <th>Topic</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="notes-list-body">
+                            <!-- Default placeholder notes -->
+                            <tr>
+                                <td>Class 9th</td>
+                                <td>Biology</td>
+                                <td>Cell Membrane & Cell Theory Notes</td>
+                                <td><a href="#" class="download-btn" onclick="alert('Downloading sample file...')">Download Docx</a></td>
+                            </tr>
+                            <tr>
+                                <td>FSc Part-I</td>
+                                <td>Chemistry</td>
+                                <td>Chemical Shift and Spectroscopy Basics</td>
+                                <td><a href="#" class="download-btn" onclick="alert('Downloading sample file...')">Download PDF</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </section>
@@ -791,7 +781,7 @@
     <section class="section registration-section" id="register">
         <h2 class="main-title" style="margin-bottom: 2rem;">Online Class Registration</h2>
         <div class="form-container">
-            <form action="#" method="POST" enctype="multipart/form-data" onsubmit="alert('Thank you for registering and providing the file! We will contact you soon.'); return false;">
+            <form action="#" method="POST" enctype="multipart/form-data" onsubmit="alert('Thank you for registering! We will contact you on WhatsApp/Email soon.'); return false;">
                 <div class="form-group">
                     <label for="student-name">Student Full Name</label>
                     <input type="text" id="student-name" placeholder="Enter student's name" required>
@@ -831,50 +821,77 @@
                     </select>
                 </div>
 
-                <!-- File Uploading Option -->
-                <div class="form-group">
-                    <label for="notes-file">Upload Your Syllabus / Notes / Reference File (Optional)</label>
-                    <input type="file" id="notes-file" name="notes_file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
-                    <span class="file-help-text">Accepted formats: PDF, Word Doc, or Images (Max 10MB)</span>
-                </div>
-
-                <button type="submit" class="submit-btn">Submit Registration</button>
+                <button type="submit" class="submit-btn">Register for Online Classes</button>
             </form>
         </div>
     </section>
 
-    <!-- Footer Area -->
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Indepth Knowledge Academy. All Rights Reserved.</p>
-                
-        <!-- Credits Section -->
+        <p>Providing premium educational resources for Matric, Intermediate, & Cambridge streams.</p>
         <div class="credits-container">
-            <div class="credit-tag">Owner / Director: <span>NABIHA JAVED</span></div>
+            <div class="credit-tag">Designed with <span>Indepth Knowledge</span></div>
         </div>
     </footer>
 
-    <!-- JS Helper for Dynamic Note Upload handling -->
+    <!-- JavaScript logic for dynamic behaviors -->
     <script>
         function addUploadedNote(event) {
             event.preventDefault();
-            
-            const title = document.getElementById('notes-title').value;
-            const grade = document.getElementById('notes-grade').value;
-            const subject = document.getElementById('notes-subject').value;
-            
-            const tbody = document.getElementById('notes-list-body');
+
+            // Get form element values
+            const titleInput = document.getElementById('notes-title');
+            const gradeInput = document.getElementById('notes-grade');
+            const subjectInput = document.getElementById('notes-subject');
+            const fileInput = document.getElementById('teacher-file');
+
+            const title = titleInput.value.trim();
+            const grade = gradeInput.value;
+            const subject = subjectInput.value;
+            const file = fileInput.files[0];
+
+            if (!title || !grade || !subject || !file) {
+                alert('Please fill in all fields and select a valid file.');
+                return;
+            }
+
+            // Extract file extension to display in download button label
+            const filename = file.name;
+            const extension = filename.slice(((filename.lastIndexOf(".") - 1) >>> 0) + 2).toUpperCase() || 'FILE';
+
+            // Reference to the notes table body
+            const tableBody = document.getElementById('notes-list-body');
+
+            // Create a new row dynamically
             const newRow = document.createElement('tr');
-            
+
             newRow.innerHTML = `
-                <td>${grade}</td>
-                <td>${subject}</td>
-                <td>${title}</td>
-                <td><a href="#" class="download-btn" onclick="alert('Downloading student resource...')">Download Docx</a></td>
+                <td>${escapeHTML(grade)}</td>
+                <td>${escapeHTML(subject)}</td>
+                <td>${escapeHTML(title)}</td>
+                <td><a href="#" class="download-btn" onclick="alert('Simulating download of uploaded file: ${escapeHTML(filename)}')">Download ${escapeHTML(extension)}</a></td>
             `;
-            
-            tbody.appendChild(newRow);
+
+            // Insert new row at the beginning of the table body list
+            tableBody.insertBefore(newRow, tableBody.firstChild);
+
+            // Clean up and reset form inputs
             document.getElementById('uploadNotesForm').reset();
-            alert('Notes successfully published on website!');
+            alert('Success! Your notes have been published to the study table below.');
+        }
+
+        // Helper function to prevent HTML injection/XSS
+        function escapeHTML(str) {
+            return str.replace(/[&<>'"]/g, 
+                tag => ({
+                    '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                    "'": '&#39;',
+                    '"': '&quot;'
+                }[tag] || tag)
+            );
         }
     </script>
 </body>
