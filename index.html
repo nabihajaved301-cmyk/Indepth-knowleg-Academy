@@ -1,898 +1,408 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ur-PK">
 <head>
-    <meta name="google-site-verification" content="zTVeMUaWr16lrKhHOxdeNxW-dL6eX5S3ejV5RoOcX5Y" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Indepth Knowledge Academy</title>
-        
-    <!-- Browser Tab Icon (Favicon) -->
-    <link class="favicon" rel="icon" type="image/png" href="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=100&q=80">
-        
+    <!-- Google Fonts & FontAwesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
-        /* Modern Reset & Base Styles */
+        /* Base Styling */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        :root {
-            --primary-black: #1a1a1a;
-            --deep-brown: #3d2b1f;
-            --warm-tan: #8c786c;
-            --soft-pink: #f4dcd6;
-            --accent-pink: #e0b0a8;
-            --pure-white: #ffffff;
-            --light-bg: #faf8f7;
-        }
-        html {
+            font-family: 'Poppins', sans-serif;
             scroll-behavior: smooth;
         }
+
+        :root {
+            --primary-color: #0f2027; /* Professional Dark Navy */
+            --secondary-color: #203a43;
+            --accent-color: #2c5364;
+            --highlight-color: #ff7e5f; /* Attractive Orange for CTA buttons */
+            --text-dark: #333333;
+            --bg-light: #f4f7f6;
+            --white: #ffffff;
+        }
+
         body {
-            background-color: var(--light-bg);
-            color: var(--primary-black);
+            background-color: var(--bg-light);
+            color: var(--text-dark);
             line-height: 1.6;
         }
-        /* Navigation Header */
+
+        /* Navigation Bar */
         header {
-            background-color: var(--primary-black);
-            padding: 10px 10%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            background: var(--white);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
             position: sticky;
             top: 0;
             z-index: 1000;
         }
-        .logo {
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 12px 20px;
+        }
+
+        .logo-container {
             display: flex;
             align-items: center;
+            gap: 12px;
+            text-decoration: none;
         }
-        .logo img {
+
+        /* Responsive Logo Image */
+        .logo-img {
             height: 50px;
             width: auto;
-            display: block;
             object-fit: contain;
-            border-radius: 4px;
+            border-radius: 8px;
         }
-        nav a {
-            color: var(--pure-white);
+
+        .logo-text {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-links a {
             text-decoration: none;
-            margin-left: 2rem;
-            font-size: 0.95rem;
-            font-weight: 500;
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 15px;
             transition: color 0.3s;
         }
-        nav a:hover {
-            color: var(--soft-pink);
+
+        .nav-links a:hover {
+            color: var(--highlight-color);
         }
-        /* Modern Hero Section */
+
+        /* Hero Section with Beautiful Background Gradient */
         .hero {
-            background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(61, 43, 31, 0.8)), 
-                        url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
-            background-position: center;
-            color: var(--pure-white);
-            padding: 8rem 10%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            color: var(--white);
+            padding: 110px 20px;
             text-align: center;
-            min-height: 450px;
+            position: relative;
+            overflow: hidden;
         }
+
+        /* Subtle Background Patterns for Professional Look */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle, rgba(255,255,255,0.05) 10%, transparent 10%);
+            background-size: 20px 20px;
+            opacity: 0.3;
+        }
+
         .hero-content {
             max-width: 800px;
             margin: 0 auto;
-        }
-        .hero h1 {
-            font-size: 3.2rem;
-            margin-bottom: 1.5rem;
-            font-weight: 600;
-            letter-spacing: -0.5px;
-            line-height: 1.2;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-        }
-        .hero h1 span {
-            color: var(--soft-pink);
-        }
-        .hero p {
-            font-size: 1.25rem;
-            color: #eeeeee;
-            margin-bottom: 0;
-            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-            line-height: 1.5;
-        }
-        /* Main Section Styling */
-        .academic-section {
-            padding: 5rem 10%;
-        }
-        .main-title {
-            text-align: center;
-            font-size: 2.5rem;
-            color: var(--deep-brown);
-            margin-bottom: 4rem;
-        }
-        /* Class Row Setup */
-        .class-row {
-            margin-bottom: 5rem;
-            background-color: var(--pure-white);
-            padding: 2.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
-            border-left: 6px solid var(--deep-brown);
-        }
-        .class-heading {
-            font-size: 2rem;
-            color: var(--primary-black);
-            margin-bottom: 0.5rem;
-        }
-        .class-badge {
-            display: inline-block;
-            background-color: var(--soft-pink);
-            color: var(--deep-brown);
-            padding: 0.3rem 1rem;
-            font-size: 0.85rem;
-            font-weight: 600;
-            border-radius: 20px;
-            margin-bottom: 2rem;
-            text-transform: uppercase;
-        }
-        /* Subject Grid Column Framework */
-        .subject-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 1.5rem;
-        }
-        /* Subject Individual Column/Card */
-        .subject-column {
-            background: var(--light-bg);
-            border: 1px solid #e8e2de;
-            border-radius: 6px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .subject-column:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(61, 43, 31, 0.1);
-        }
-        /* Image Container inside Subject Column */
-        .subject-image-container {
-            width: 100%;
-            height: 160px;
-            background-color: #e2dcd8;
-            overflow: hidden;
             position: relative;
+            z-index: 2;
         }
-        .subject-image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-        /* Subject Details */
-        .subject-details {
-            padding: 1.2rem;
-            text-align: center;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .subject-details h4 {
-            font-size: 1.25rem;
-            color: var(--primary-black);
-            margin-bottom: 0.5rem;
-        }
-        .subject-details p {
-            font-size: 0.9rem;
-            color: var(--warm-tan);
-        }
-        /* Registration & Teacher Portal Forms */
-        .registration-section, .teacher-section {
-            background-color: var(--soft-pink);
-            padding: 5rem 10%;
-        }
-        .teacher-section {
-            background-color: #f0eae5;
-            border-top: 2px dashed var(--warm-tan);
-        }
-        .form-container {
-            max-width: 650px;
-            margin: 0 auto;
-            background: var(--pure-white);
-            padding: 3rem;
-            border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-        .form-group label {
-            display: block;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: var(--deep-brown);
-            font-size: 0.95rem;
-        }
-        .form-group input, 
-        .form-group select {
-            width: 100%;
-            padding: 0.8rem 1rem;
-            border: 1px solid #dddddd;
-            border-radius: 4px;
-            font-size: 1rem;
-            background-color: #fafafa;
-            transition: border-color 0.3s, background-color 0.3s;
-        }
-        .form-group input:focus, 
-        .form-group select:focus {
-            outline: none;
-            border-color: var(--accent-pink);
-            background-color: var(--pure-white);
-        }
-        .form-group input[type="file"] {
-            padding: 0.6rem;
-            background-color: #fff;
-            cursor: pointer;
-        }
-        .form-group .file-help-text {
-            display: block;
-            font-size: 0.8rem;
-            color: #777777;
-            margin-top: 0.3rem;
-        }
-        .submit-btn {
-            width: 100%;
-            background-color: var(--primary-black);
-            color: var(--pure-white);
-            border: none;
-            padding: 1rem;
-            font-size: 1rem;
-            font-weight: 600;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            text-transform: uppercase;
+
+        .hero h1 {
+            font-size: 46px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.25;
             letter-spacing: 0.5px;
         }
-        .submit-btn:hover {
-            background-color: var(--deep-brown);
+
+        .hero p {
+            font-size: 17px;
+            margin-bottom: 35px;
+            opacity: 0.9;
+            font-weight: 300;
         }
-        /* Notes Table Container */
-        .notes-table-container {
-            margin-top: 2.5rem;
-            background: var(--pure-white);
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        .notes-table-container h3 {
-            color: var(--deep-brown);
-            margin-bottom: 1.5rem;
-            font-size: 1.4rem;
-            border-bottom: 2px solid var(--soft-pink);
-            padding-bottom: 0.5rem;
-        }
-        .table-responsive {
-            width: 100%;
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-        }
-        .notes-table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: left;
-            min-width: 500px;
-        }
-        .notes-table th, .notes-table td {
-            padding: 1rem;
-            border-bottom: 1px solid #eeeeee;
-        }
-        .notes-table th {
-            background-color: var(--primary-black);
-            color: var(--pure-white);
-            font-size: 0.9rem;
-            text-transform: uppercase;
-        }
-        .notes-table tr:hover {
-            background-color: #fafafa;
-        }
-        .download-btn {
-            background-color: var(--accent-pink);
-            color: var(--deep-brown);
-            padding: 0.4rem 0.8rem;
-            border-radius: 4px;
+
+        .btn {
+            background-color: var(--highlight-color);
+            color: var(--white);
+            padding: 13px 32px;
+            border-radius: 30px;
             text-decoration: none;
-            font-weight: bold;
-            font-size: 0.85rem;
-            transition: background-color 0.2s;
+            font-weight: 600;
+            box-shadow: 0 5px 15px rgba(255, 126, 95, 0.4);
+            transition: all 0.3s ease;
             display: inline-block;
         }
-        .download-btn:hover {
-            background-color: var(--warm-tan);
-            color: var(--pure-white);
+
+        .btn:hover {
+            transform: translateY(-3px);
+            background-color: #ff6b4a;
+            box-shadow: 0 8px 20px rgba(255, 126, 95, 0.6);
         }
-        /* Footer */
-        footer {
-            background-color: var(--primary-black);
-            color: #888888;
-            padding: 2.5rem 10%;
+
+        /* Classes Section */
+        .classes-section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
             text-align: center;
-            font-size: 0.9rem;
-            border-top: 1px solid #2a2a2a;
+            font-size: 34px;
+            color: var(--primary-color);
+            margin-bottom: 50px;
+            font-weight: 700;
+            position: relative;
         }
-        footer p {
-            margin-bottom: 0.6rem;
+
+        .section-title::after {
+            content: '';
+            width: 50px;
+            height: 4px;
+            background-color: var(--highlight-color);
+            display: block;
+            margin: 12px auto 0;
+            border-radius: 2px;
         }
-        footer .credits-container {
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid #252525;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
         }
-        footer .credit-tag {
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: #aaaaaa;
+
+        .class-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 35px 25px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+            transition: all 0.3s ease;
+            border-top: 5px solid var(--primary-color);
         }
-        footer .credit-tag span {
-            color: var(--accent-pink);
+
+        .class-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+            border-top-color: var(--highlight-color);
+        }
+
+        .class-card i {
+            font-size: 38px;
+            color: var(--highlight-color);
+            margin-bottom: 20px;
+        }
+
+        .class-card h3 {
+            font-size: 20px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
             font-weight: 600;
         }
-        /* Responsive CSS */
-        @media (max-width: 992px) {
-            .hero {
-                padding: 6rem 5%;
-                min-height: 400px;
-            }
-            .hero h1 {
-                font-size: 2.5rem;
-            }
+
+        .class-card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
         }
+
+        .card-btn {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s;
+            font-size: 15px;
+        }
+
+        .card-btn:hover {
+            color: var(--highlight-color);
+        }
+
+        /* Portal Feature Section */
+        .portal-section {
+            background-color: var(--white);
+            padding: 80px 20px;
+        }
+
+        .portal-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .portal-features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .feature-item {
+            flex: 1 1 280px;
+            max-width: 350px;
+            padding: 20px;
+        }
+
+        .feature-item i {
+            font-size: 32px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .feature-item h3 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #0f2027;
+            color: var(--white);
+            text-align: center;
+            padding: 45px 20px;
+            border-top: 4px solid var(--highlight-color);
+        }
+
+        footer p {
+            margin-bottom: 10px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        footer .designer-tag {
+            font-weight: 700;
+            color: var(--highlight-color);
+            font-size: 16px;
+            letter-spacing: 1px;
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+
+        footer .contact-info {
+            font-size: 14px;
+            margin-top: 8px;
+            opacity: 0.9;
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            header {
+            .navbar {
                 flex-direction: column;
-                gap: 1rem;
-                padding: 15px 5%;
-            }
-            nav {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 1rem;
-            }
-            nav a {
-                margin: 0;
+                gap: 15px;
+                text-align: center;
             }
             .hero h1 {
-                font-size: 2.2rem;
+                font-size: 32px;
             }
-            .class-row {
-                padding: 1.5rem;
-            }
-            .form-container {
-                padding: 2rem 1.5rem;
-            }
-            .notes-table th, .notes-table td {
-                padding: 0.8rem 0.5rem;
-                font-size: 0.85rem;
+            .hero p {
+                font-size: 15px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header Navigation -->
+
+    <!-- Navigation Header -->
     <header>
-        <div class="logo">
-            <!-- Online logo placeholder that works out of the box -->
-            <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=150&q=80" alt="Indepth Knowledge Academy Logo">
+        <div class="navbar">
+            <a href="#" class="logo-container">
+                <!-- Google automatic logo target based on relative directory paths -->
+                <img src="logo.png" alt="Indepth Knowledge Academy Logo" class="logo-img" onerror="this.src='logo.jpg'; this.onerror=function(){this.src='images/logo.png';};">
+                <span class="logo-text">Indepth Knowledge</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#portal">Portal</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#courses">Our Courses</a>
-            <a href="#portal">Upload Notes</a>
-            <a href="#register">Online Registration</a>
-        </nav>
     </header>
 
-    <!-- Clean Education-themed Hero Section -->
-    <section class="hero" id="home">
+    <!-- Hero Banner Section -->
+    <section class="hero">
         <div class="hero-content">
-            <h1>Mastering Sciences with <span>Indepth Knowledge</span></h1>
-            <p>Comprehensive, syllabus-aligned academic courses from Grade 9 to FSc, O-Level & A-Level designed to build strong foundations and achieve top scores under expert guidance.</p>
+            <h1>Shaping Minds, Building Futures</h1>
+            <p>Welcome to Indepth Knowledge Academy. We provide premium quality conceptual lectures, comprehensive study notes, and regular self-assessment quizzes for Class 9th, 10th, and F.Sc (Pre-Medical / Pre-Engineering & Computer Science).</p>
+            <a href="#classes" class="btn"><i class="fa-solid fa-book-open"></i> Explore Courses</a>
         </div>
     </section>
 
-    <!-- All Academic Levels Section -->
-    <section class="academic-section" id="courses">
-        <h2 class="main-title">Academic Programs By Level</h2>
-
-        <!-- ================= CLASS 9TH ROW ================= -->
-        <div class="class-row">
-            <h3 class="class-heading">Class 9th</h3>
-            <span class="class-badge">SSC Part I</span>
-            <div class="subject-grid">
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=400&q=80" alt="9th Physics">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Physics</h4>
-                        <p>Core Foundations & Numericals</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1532187863486-abf9d39d66e8?auto=format&fit=crop&w=400&q=80" alt="9th Chemistry">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Chemistry</h4>
-                        <p>Basic Chemical Principles</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1530026405186-ed1ea0ac7a63?auto=format&fit=crop&w=400&q=80" alt="9th Biology">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Biology</h4>
-                        <p>Introduction to Living Systems</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="9th Computer Science">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Computer Science</h4>
-                        <p>Fundamentals & Computing Concepts</p>
-                    </div>
-                </div>
+    <!-- Classes Grid Section -->
+    <section class="classes-section" id="classes">
+        <h2 class="section-title">Academic Classes</h2>
+        <div class="grid">
+            <!-- Class 9th -->
+            <div class="class-card">
+                <i class="fa-solid fa-bookmark"></i>
+                <h3>Class 9th</h3>
+                <p>Complete conceptual lecture series, notes, and topic-wise self-testing MCQs based on FBISE Board patterns.</p>
+                <a href="#" class="card-btn">View Notes <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <!-- Class 10th -->
+            <div class="class-card">
+                <i class="fa-solid fa-book"></i>
+                <h3>Class 10th</h3>
+                <p>Thorough preparation with standard course schemes, conceptual study material, and active boards paper practice.</p>
+                <a href="#" class="card-btn">View Notes <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <!-- F.Sc Part 1 (11th) -->
+            <div class="class-card">
+                <i class="fa-solid fa-flask"></i>
+                <h3>F.Sc Part-I (11th)</h3>
+                <p>Advanced Science preparation for Physics, Chemistry, Biology, and Computer Science following Federal Board.</p>
+                <a href="#" class="card-btn">View Notes <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <!-- F.Sc Part 2 (12th) -->
+            <div class="class-card">
+                <i class="fa-solid fa-dna"></i>
+                <h3>F.Sc Part-II (12th)</h3>
+                <p>Comprehensive exam preparation schemes, target notes, and dedicated MCQ sessions for maximum board scoring.</p>
+                <a href="#" class="card-btn">View Notes <i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
+    </section>
 
-        <!-- ================= CLASS 10TH ROW ================= -->
-        <div class="class-row">
-            <h3 class="class-heading">Class 10th</h3>
-            <span class="class-badge">SSC Part II</span>
-            <div class="subject-grid">
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=400&q=80" alt="10th Physics">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Physics</h4>
-                        <p>Advanced Matric Frameworks</p>
-                    </div>
+    <!-- Portal & Upload Features Section -->
+    <section class="portal-section" id="portal">
+        <div class="portal-container">
+            <h2 class="section-title">Academy Portal Features</h2>
+            <p>Our centralized system provides seamless note distribution and administrative convenience.</p>
+            <div class="portal-features">
+                <div class="feature-item">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <h3>Online Notes Distribution</h3>
+                    <p>Easily upload and manage chapter-wise notes for classes 9th to F.Sc in real-time.</p>
                 </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?auto=format&fit=crop&w=400&q=80" alt="10th Chemistry">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Chemistry</h4>
-                        <p>Organic & Environmental Applications</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=400&q=80" alt="10th Biology">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Biology</h4>
-                        <p>Genetics & Continuity of Life</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=80" alt="10th Computer Science">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Computer Science</h4>
-                        <p>Logic Design & Basic Programming</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ================= O LEVEL ROW ================= -->
-        <div class="class-row">
-            <h3 class="class-heading">O-Level</h3>
-            <span class="class-badge">Cambridge / Edexcel</span>
-            <div class="subject-grid">
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=400&q=80" alt="O-Level Physics">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Physics</h4>
-                        <p>CIE / Edexcel Core Physics Concepts</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&w=400&q=80" alt="O-Level Chemistry">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Chemistry</h4>
-                        <p>Experimental & Structural Chemistry</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?auto=format&fit=crop&w=400&q=80" alt="O-Level Biology">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Biology</h4>
-                        <p>Human Physiology & Ecology Syllabus</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=400&q=80" alt="O-Level Computer Science">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Computer Science</h4>
-                        <p>Algorithmic Logic & Programming</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ================= FSC PART 1 (11th) ROW ================= -->
-        <div class="class-row">
-            <h3 class="class-heading">FSc Part-I</h3>
-            <span class="class-badge">HSSC Part I (Grade 11)</span>
-            <div class="subject-grid">
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=400&q=80" alt="11th Physics">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Physics</h4>
-                        <p>Mechanics, Waves & Thermodynamics</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1512462249780-c57c52407b22?auto=format&fit=crop&w=400&q=80" alt="11th Chemistry">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Chemistry</h4>
-                        <p>Physical & Inorganic Foundations</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=400&q=80" alt="11th Biology">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Biology</h4>
-                        <p>Cell Biology & Variety of Life</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=400&q=80" alt="11th Computer Science">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Computer Science</h4>
-                        <p>Information Technology Systems</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ================= A LEVEL ROW ================= -->
-        <div class="class-row">
-            <h3 class="class-heading">A-Level</h3>
-            <span class="class-badge">Advanced Level (AS & A2)</span>
-            <div class="subject-grid">
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1607988795691-3d0147b43231?auto=format&fit=crop&w=400&q=80" alt="A-Level Physics">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Physics</h4>
-                        <p>Advanced Mechanics, Fields & Nuclear Physics</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=400&q=80" alt="A-Level Chemistry">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Chemistry</h4>
-                        <p>Advanced Physical, Organic & Spectroscopy</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=400&q=80" alt="a-Level Biology">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Biology</h4>
-                        <p>Biochemistry, Genetics & Gene Technology</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=400&q=80" alt="A-Level Computer Science">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Computer Science</h4>
-                        <p>Advanced Systems & Software Development</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ================= FSC PART 2 (12th) ROW ================= -->
-        <div class="class-row">
-            <h3 class="class-heading">FSc Part-II</h3>
-            <span class="class-badge">HSSC Part II (Grade 12)</span>
-            <div class="subject-grid">
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=400&q=80" alt="12th Physics">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Physics</h4>
-                        <p>Electricity, Magnetism & Atomic Physics</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1617155093730-a8bf47be792d?auto=format&fit=crop&w=400&q=80" alt="12th Chemistry">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Chemistry</h4>
-                        <p>Advanced Organic & Analytical Systems</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=400&q=80" alt="12th Biology">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Biology</h4>
-                        <p>Homeostasis, Support & Coordination</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=400&q=80" alt="12th Computer Science">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Computer Science</h4>
-                        <p>Database Management & C Programming</p>
-                    </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-users-gear"></i>
+                    <h3>Admin Management Portal</h3>
+                    <p>Centralized control panel for class coordinators, directors, and teaching staff to track activities.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ================= TEACHER / ADMIN PORTAL SECTION ================= -->
-    <section class="teacher-section" id="portal">
-        <h2 class="main-title" style="margin-bottom: 2rem;">Teacher Portal — Upload Study Notes</h2>
-        <div class="form-container">
-            <form id="uploadNotesForm" onsubmit="addUploadedNote(event)">
-                <div class="form-group">
-                    <label for="notes-title">Notes Topic / Chapter Name</label>
-                    <input type="text" id="notes-title" placeholder="e.g., Plasma Membrane structure, Cell Transport" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="notes-grade">Target Class / Level</label>
-                    <select id="notes-grade" required>
-                        <option value="" disabled selected>Select Level</option>
-                        <option value="Class 9th">Class 9th (SSC-I)</option>
-                        <option value="Class 10th">Class 10th (SSC-II)</option>
-                        <option value="O-Level">O-Level (CIE / Edexcel)</option>
-                        <option value="FSc Part-I">FSc Part-I (Grade 11)</option>
-                        <option value="A-Level">A-Level (AS & A2)</option>
-                        <option value="FSc Part-II">FSc Part-II (Grade 12)</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="notes-subject">Subject</label>
-                    <select id="notes-subject" required>
-                        <option value="" disabled selected>Select Subject</option>
-                        <option value="Physics">Physics</option>
-                        <option value="Chemistry">Chemistry</option>
-                        <option value="Biology">Biology</option>
-                        <option value="Computer Science">Computer Science</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="teacher-file">Choose Notes File</label>
-                    <input type="file" id="teacher-file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" required>
-                    <span class="file-help-text">Upload .docx, .pdf, or image file notes.</span>
-                </div>
-
-                <button type="submit" class="submit-btn">Publish Notes on Website</button>
-            </form>
-
-            <!-- Dynamic Download Area for Students -->
-            <div class="notes-table-container">
-                <h3>Download Study Resources</h3>
-                <div class="table-responsive">
-                    <table class="notes-table">
-                        <thead>
-                            <tr>
-                                <th>Class</th>
-                                <th>Subject</th>
-                                <th>Topic</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody id="notes-list-body">
-                            <!-- Default placeholder notes -->
-                            <tr>
-                                <td>Class 9th</td>
-                                <td>Biology</td>
-                                <td>Cell Membrane & Cell Theory Notes</td>
-                                <td><a href="#" class="download-btn" onclick="alert('Downloading sample file...')">Download Docx</a></td>
-                            </tr>
-                            <tr>
-                                <td>FSc Part-I</td>
-                                <td>Chemistry</td>
-                                <td>Chemical Shift and Spectroscopy Basics</td>
-                                <td><a href="#" class="download-btn" onclick="alert('Downloading sample file...')">Download PDF</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Online Class Registration Section -->
-    <section class="section registration-section" id="register">
-        <h2 class="main-title" style="margin-bottom: 2rem;">Online Class Registration</h2>
-        <div class="form-container">
-            <form action="#" method="POST" enctype="multipart/form-data" onsubmit="alert('Thank you for registering! We will contact you on WhatsApp/Email soon.'); return false;">
-                <div class="form-group">
-                    <label for="student-name">Student Full Name</label>
-                    <input type="text" id="student-name" placeholder="Enter student's name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" placeholder="Enter contact email address" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="phone">Phone / WhatsApp Number</label>
-                    <input type="tel" id="phone" placeholder="e.g., +92 300 1234567" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="grade">Select Class / Level</label>
-                    <select id="grade" required>
-                        <option value="" disabled selected>Choose target class</option>
-                        <option value="9th">Class 9th (SSC-I)</option>
-                        <option value="10th">Class 10th (SSC-II)</option>
-                        <option value="olevel">O-Level (CIE / Edexcel)</option>
-                        <option value="fsc-1">FSc Part-I (HSSC-I)</option>
-                        <option value="alevel">A-Level (CIE / Edexcel)</option>
-                        <option value="fsc-2">FSc Part-II (HSSC-II)</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="subject">Select Specific Subject Course</label>
-                    <select id="subject" required>
-                        <option value="" disabled selected>Select subject focus</option>
-                        <option value="all">All Science Subjects Bundle</option>
-                        <option value="physics">Physics</option>
-                        <option value="chemistry">Chemistry</option>
-                        <option value="biology">Biology</option>
-                        <option value="computer">Computer Science</option>
-                    </select>
-                </div>
-
-                <button type="submit" class="submit-btn">Register for Online Classes</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Indepth Knowledge Academy. All Rights Reserved.</p>
-        <p>Providing premium educational resources for Matric, Intermediate, & Cambridge streams.</p>
-        <div class="credits-container">
-            <div class="credit-tag">Designed with <span>Indepth Knowledge</span></div>
-        </div>
+    <!-- Footer Section -->
+    <footer id="contact">
+        <p>Indepth Knowledge Academy &copy; 2026. All Rights Reserved.</p>
+        <p class="designer-tag">DESIGNED BY NABIHA JAVED</p>
+        <p class="contact-info"><i class="fa-solid fa-phone"></i> Contact Number: 0370-5657951</p>
     </footer>
 
-    <!-- JavaScript logic for dynamic behaviors -->
-    <script>
-        function addUploadedNote(event) {
-            event.preventDefault();
-
-            // Get form element values
-            const titleInput = document.getElementById('notes-title');
-            const gradeInput = document.getElementById('notes-grade');
-            const subjectInput = document.getElementById('notes-subject');
-            const fileInput = document.getElementById('teacher-file');
-
-            const title = titleInput.value.trim();
-            const grade = gradeInput.value;
-            const subject = subjectInput.value;
-            const file = fileInput.files[0];
-
-            if (!title || !grade || !subject || !file) {
-                alert('Please fill in all fields and select a valid file.');
-                return;
-            }
-
-            // Extract file extension to display in download button label
-            const filename = file.name;
-            const extension = filename.slice(((filename.lastIndexOf(".") - 1) >>> 0) + 2).toUpperCase() || 'FILE';
-
-            // Reference to the notes table body
-            const tableBody = document.getElementById('notes-list-body');
-
-            // Create a new row dynamically
-            const newRow = document.createElement('tr');
-
-            newRow.innerHTML = `
-                <td>${escapeHTML(grade)}</td>
-                <td>${escapeHTML(subject)}</td>
-                <td>${escapeHTML(title)}</td>
-                <td><a href="#" class="download-btn" onclick="alert('Simulating download of uploaded file: ${escapeHTML(filename)}')">Download ${escapeHTML(extension)}</a></td>
-            `;
-
-            // Insert new row at the beginning of the table body list
-            tableBody.insertBefore(newRow, tableBody.firstChild);
-
-            // Clean up and reset form inputs
-            document.getElementById('uploadNotesForm').reset();
-            alert('Success! Your notes have been published to the study table below.');
-        }
-
-        // Helper function to prevent HTML injection/XSS
-        function escapeHTML(str) {
-            return str.replace(/[&<>'"]/g, 
-                tag => ({
-                    '&': '&amp;',
-                    '<': '&lt;',
-                    '>': '&gt;',
-                    "'": '&#39;',
-                    '"': '&quot;'
-                }[tag] || tag)
-            );
-        }
-    </script>
 </body>
 </html>
