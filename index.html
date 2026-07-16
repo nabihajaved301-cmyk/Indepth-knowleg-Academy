@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Search Console Verification Tag -->
     <meta name="google-site-verification" content="zTVeMUaWr16lrKhHOxdeNxW-dL6eX5S3ejV5RoOcX5Y" />
-    <title>Indepth Knowledge Academy</title>
     
+    <title>Indepth Knowledge Academy</title>
+        
     <!-- Browser Tab Icon (Favicon) -->
     <link class="favicon" rel="icon" type="image/jpeg" href="your-backgroun.jpg.jpeg">
-    
+        
     <style>
         /* Modern Reset & Base Styles */
         * {
@@ -17,7 +19,6 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
         :root {
             --primary-black: #1a1a1a;
             --deep-brown: #3d2b1f;
@@ -27,13 +28,11 @@
             --pure-white: #ffffff;
             --light-bg: #faf8f7;
         }
-
         body {
             background-color: var(--light-bg);
             color: var(--primary-black);
             line-height: 1.6;
         }
-
         /* Navigation Header */
         header {
             background-color: var(--primary-black);
@@ -45,12 +44,10 @@
             top: 0;
             z-index: 1000;
         }
-
         .logo {
             display: flex;
             align-items: center;
         }
-
         /* Logo styling for white circular emblem to look crisp on black header */
         .logo img {
             height: 65px;
@@ -61,7 +58,6 @@
             background-color: var(--pure-white);
             padding: 2px;
         }
-
         nav a {
             color: var(--pure-white);
             text-decoration: none;
@@ -69,11 +65,9 @@
             font-size: 0.95rem;
             transition: color 0.3s;
         }
-
         nav a:hover {
             color: var(--soft-pink);
         }
-
         /* Modern Hero Section with Education/Library Background Image */
         .hero {
             background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(61, 43, 31, 0.8)), 
@@ -90,12 +84,10 @@
             text-align: center;
             min-height: 450px;
         }
-
         .hero-content {
             max-width: 800px;
             margin: 0 auto;
         }
-
         .hero h1 {
             font-size: 3.2rem;
             margin-bottom: 1.5rem;
@@ -104,11 +96,9 @@
             line-height: 1.2;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
         }
-
         .hero h1 span {
             color: var(--soft-pink);
         }
-
         .hero p {
             font-size: 1.25rem;
             color: #eeeeee;
@@ -116,19 +106,16 @@
             text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
             line-height: 1.5;
         }
-
         /* Main Section Styling */
         .academic-section {
             padding: 5rem 10%;
         }
-
         .main-title {
             text-align: center;
             font-size: 2.5rem;
             color: var(--deep-brown);
             margin-bottom: 4rem;
         }
-
         /* Class Row Setup */
         .class-row {
             margin-bottom: 5rem;
@@ -138,13 +125,11 @@
             box-shadow: 0 4px 20px rgba(0,0,0,0.02);
             border-left: 6px solid var(--deep-brown);
         }
-
         .class-heading {
             font-size: 2rem;
             color: var(--primary-black);
             margin-bottom: 0.5rem;
         }
-
         .class-badge {
             display: inline-block;
             background-color: var(--soft-pink);
@@ -156,14 +141,12 @@
             margin-bottom: 2rem;
             text-transform: uppercase;
         }
-
         /* Subject Grid Column Framework */
         .subject-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 1.5rem;
         }
-
         /* Subject Individual Column/Card */
         .subject-column {
             background: var(--light-bg);
@@ -174,12 +157,10 @@
             flex-direction: column;
             transition: transform 0.3s, box-shadow 0.3s;
         }
-
         .subject-column:hover {
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(61, 43, 31, 0.1);
         }
-
         /* Image Container inside Subject Column */
         .subject-image-container {
             width: 100%;
@@ -188,14 +169,12 @@
             overflow: hidden;
             position: relative;
         }
-
         .subject-image-container img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             display: block;
         }
-
         /* Subject Details */
         .subject-details {
             padding: 1.2rem;
@@ -205,29 +184,24 @@
             flex-direction: column;
             justify-content: center;
         }
-
         .subject-details h4 {
             font-size: 1.25rem;
             color: var(--primary-black);
             margin-bottom: 0.5rem;
         }
-
         .subject-details p {
             font-size: 0.9rem;
             color: var(--warm-tan);
         }
-
         /* Registration & Teacher Portal Forms */
         .registration-section, .teacher-section {
             background-color: var(--soft-pink);
             padding: 5rem 10%;
         }
-
         .teacher-section {
             background-color: #f0eae5;
             border-top: 2px dashed var(--warm-tan);
         }
-
         .form-container {
             max-width: 650px;
             margin: 0 auto;
@@ -236,11 +210,9 @@
             border-radius: 8px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
         }
-
         .form-group {
             margin-bottom: 1.5rem;
         }
-
         .form-group label {
             display: block;
             font-weight: 600;
@@ -248,7 +220,6 @@
             color: var(--deep-brown);
             font-size: 0.95rem;
         }
-
         .form-group input, 
         .form-group select {
             width: 100%;
@@ -259,28 +230,24 @@
             background-color: #fafafa;
             transition: border-color 0.3s, background-color 0.3s;
         }
-
         .form-group input:focus, 
         .form-group select:focus {
             outline: none;
             border-color: var(--accent-pink);
             background-color: var(--pure-white);
         }
-
         /* Styling for File Input specifically */
         .form-group input[type="file"] {
             padding: 0.6rem;
             background-color: #fff;
             cursor: pointer;
         }
-
         .form-group .file-help-text {
             display: block;
             font-size: 0.8rem;
             color: #777777;
             margin-top: 0.3rem;
         }
-
         .submit-btn {
             width: 100%;
             background-color: var(--primary-black);
@@ -295,11 +262,9 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
-
         .submit-btn:hover {
             background-color: var(--deep-brown);
         }
-
         /* Notes Table Container */
         .notes-table-container {
             margin-top: 2rem;
@@ -308,7 +273,6 @@
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
-
         .notes-table-container h3 {
             color: var(--deep-brown);
             margin-bottom: 1.5rem;
@@ -316,29 +280,24 @@
             border-bottom: 2px solid var(--soft-pink);
             padding-bottom: 0.5rem;
         }
-
         .notes-table {
             width: 100%;
             border-collapse: collapse;
             text-align: left;
         }
-
         .notes-table th, .notes-table td {
             padding: 1rem;
             border-bottom: 1px solid #eeeeee;
         }
-
         .notes-table th {
             background-color: var(--primary-black);
             color: var(--pure-white);
             font-size: 0.9rem;
             text-transform: uppercase;
         }
-
         .notes-table tr:hover {
             background-color: #fafafa;
         }
-
         .download-btn {
             background-color: var(--accent-pink);
             color: var(--deep-brown);
@@ -349,12 +308,10 @@
             font-size: 0.85rem;
             transition: background-color 0.2s;
         }
-
         .download-btn:hover {
             background-color: var(--warm-tan);
             color: var(--pure-white);
         }
-
         /* Footer */
         footer {
             background-color: var(--primary-black);
@@ -364,11 +321,9 @@
             font-size: 0.9rem;
             border-top: 1px solid #2a2a2a;
         }
-
         footer p {
             margin-bottom: 0.6rem;
         }
-
         footer .credits-container {
             margin-top: 1rem;
             padding-top: 1rem;
@@ -378,19 +333,16 @@
             align-items: center;
             gap: 0.5rem;
         }
-
         footer .credit-tag {
             font-size: 0.85rem;
             letter-spacing: 1px;
             text-transform: uppercase;
             color: #aaaaaa;
         }
-
         footer .credit-tag span {
             color: var(--accent-pink);
             font-weight: 600;
         }
-
         /* Responsive */
         @media (max-width: 992px) {
             .hero {
@@ -426,7 +378,6 @@
     </style>
 </head>
 <body>
-
     <!-- Header Navigation -->
     <header>
         <div class="logo">
@@ -441,7 +392,7 @@
         </nav>
     </header>
 
-    <!-- Clean Education-themed Hero Section (No Personal Picture or Name) -->
+    <!-- Clean Education-themed Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>Mastering Sciences with <span>Indepth Knowledge</span></h1>
@@ -457,8 +408,7 @@
         <div class="class-row">
             <h3 class="class-heading">Class 9th</h3>
             <span class="class-badge">SSC Part I</span>
-            
-            <div class="subject-grid">
+                        <div class="subject-grid">
                 <!-- Physics Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
@@ -505,13 +455,11 @@
             </div>
         </div>
 
-
         <!-- ================= CLASS 10TH ROW ================= -->
         <div class="class-row">
             <h3 class="class-heading">Class 10th</h3>
             <span class="class-badge">SSC Part II</span>
-            
-            <div class="subject-grid">
+                        <div class="subject-grid">
                 <!-- Physics Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
@@ -558,13 +506,11 @@
             </div>
         </div>
 
-
         <!-- ================= O LEVEL ROW ================= -->
         <div class="class-row">
             <h3 class="class-heading">O-Level</h3>
             <span class="class-badge">Cambridge / Edexcel</span>
-            
-            <div class="subject-grid">
+                        <div class="subject-grid">
                 <!-- Physics Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
@@ -611,13 +557,11 @@
             </div>
         </div>
 
-
         <!-- ================= FSC PART 1 (11th) ROW ================= -->
         <div class="class-row">
             <h3 class="class-heading">FSc Part-I</h3>
             <span class="class-badge">HSSC Part I (Grade 11)</span>
-            
-            <div class="subject-grid">
+                        <div class="subject-grid">
                 <!-- Physics Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
@@ -664,13 +608,11 @@
             </div>
         </div>
 
-
         <!-- ================= A LEVEL ROW ================= -->
         <div class="class-row">
             <h3 class="class-heading">A-Level</h3>
             <span class="class-badge">Advanced Level (AS & A2)</span>
-            
-            <div class="subject-grid">
+                        <div class="subject-grid">
                 <!-- Physics Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
@@ -717,13 +659,11 @@
             </div>
         </div>
 
-
         <!-- ================= FSC PART 2 (12th) ROW ================= -->
         <div class="class-row">
             <h3 class="class-heading">FSc Part-II</h3>
             <span class="class-badge">HSSC Part II (Grade 12)</span>
-            
-            <div class="subject-grid">
+                        <div class="subject-grid">
                 <!-- Physics Column -->
                 <div class="subject-column">
                     <div class="subject-image-container">
@@ -821,8 +761,7 @@
                     <thead>
                         <tr>
                             <th>Class</th>
-                            <th>Subject</th>
-                            <th>Topic</th>
+                            <th>Subject</th>                            <th>Topic</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -855,7 +794,6 @@
                     <label for="student-name">Student Full Name</label>
                     <input type="text" id="student-name" placeholder="Enter student's name" required>
                 </div>
-                
                 <div class="form-group">
                     <label for="email">Email Address</label>
                     <input type="email" id="email" placeholder="Enter contact email address" required>
@@ -906,51 +844,36 @@
     <!-- Footer Area -->
     <footer>
         <p>&copy; 2026 Indepth Knowledge Academy. All Rights Reserved.</p>
-        
+                
         <!-- Credits Section -->
         <div class="credits-container">
             <div class="credit-tag">Owner / Director: <span>NABIHA JAVED</span></div>
-            <div class="credit-tag">Designed by: <span>HANNAN JAVED</span></div>
         </div>
     </footer>
 
-    <!-- JavaScript to handle interactive uploaded notes addition dynamically -->
+    <!-- JS Helper for Dynamic Note Upload handling -->
     <script>
         function addUploadedNote(event) {
             event.preventDefault();
-
-            // Form inputs fetch karna
-            const titleInput = document.getElementById('notes-title').value;
-            const classInput = document.getElementById('notes-grade').value;
-            const subjectInput = document.getElementById('notes-subject').value;
-            const fileInput = document.getElementById('teacher-file');
             
-            if (fileInput.files.length === 0) {
-                alert("Please select a notes file to upload!");
-                return;
-            }
-
-            const fileName = fileInput.files[0].name;
-
-            // Naya row create karna table body ke andar
-            const tableBody = document.getElementById('notes-list-body');
+            const title = document.getElementById('notes-title').value;
+            const grade = document.getElementById('notes-grade').value;
+            const subject = document.getElementById('notes-subject').value;
+            
+            const tbody = document.getElementById('notes-list-body');
             const newRow = document.createElement('tr');
-
+            
             newRow.innerHTML = `
-                <td>${classInput}</td>
-                <td>${subjectInput}</td>
-                <td>${titleInput}</td>
-                <td><a href="#" class="download-btn" onclick="alert('Downloading: ${fileName}'); return false;">Download File</a></td>
+                <td>${grade}</td>
+                <td>${subject}</td>
+                <td>${title}</td>
+                <td><a href="#" class="download-btn" onclick="alert('Downloading student resource...')">Download Docx</a></td>
             `;
-
-            // Table mein upar insert karna takay new file top par show ho
-            tableBody.insertBefore(newRow, tableBody.firstChild);
-
-            // Form reset karna upload ke baad
+            
+            tbody.appendChild(newRow);
             document.getElementById('uploadNotesForm').reset();
-            alert('Your study notes have been successfully uploaded and added to the download section!');
+            alert('Notes successfully published on website!');
         }
     </script>
-
 </body>
 </html>
