@@ -20,7 +20,7 @@
   --color-card-bg: #ffffff;
   --color-border: #e8e2de;
   --color-border-hover: #d2c8c0;
-  
+
   /* Text Colors */
   --color-text-main: #1a1a1a;
   --color-text-muted: #5a5552;
@@ -74,7 +74,9 @@
 /* --------------------------------------------------------------------------
    2. MODERN CSS RESET & ACCESSIBILITY BASICS
    -------------------------------------------------------------------------- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -94,7 +96,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-img, iframe {
+img,
+iframe {
   max-width: 100%;
   height: auto;
   display: block;
@@ -241,7 +244,8 @@ img, iframe {
   position: relative;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
   color: var(--color-soft-pink);
 }
 
@@ -309,10 +313,11 @@ img, iframe {
   right: 0;
   bottom: 0;
   background: linear-gradient(135deg, rgba(18, 18, 18, 0.88) 0%, rgba(61, 43, 31, 0.85) 100%),
-              url('assets/images/your-backgroun.jpg');
+    url('assets/images/your-backgroun.jpg');
   background-size: cover;
   background-position: center;
-  opacity: 0.28; /* Minimal opacity for an ultra-polished background overlay */
+  opacity: 0.28;
+  /* Minimal opacity for an ultra-polished background overlay */
   z-index: 1;
 }
 
@@ -984,7 +989,9 @@ select.form-control {
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Thank You Card */
@@ -1019,8 +1026,15 @@ select.form-control {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -1044,7 +1058,8 @@ select.form-control {
   min-width: 600px;
 }
 
-.resources-table th, .resources-table td {
+.resources-table th,
+.resources-table td {
   padding: 1rem 1.25rem;
   border-bottom: 1px solid var(--color-border);
 }
@@ -1221,6 +1236,7 @@ select.form-control {
   .about-grid {
     grid-template-columns: 1fr;
   }
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1231,6 +1247,7 @@ select.form-control {
     height: auto;
     padding: 1rem 0;
   }
+
   .nav-menu {
     display: none;
     position: absolute;
@@ -1243,30 +1260,39 @@ select.form-control {
     gap: var(--space-md);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
+
   .nav-menu.is-active {
     display: flex;
   }
+
   .mobile-toggle {
     display: block;
   }
+
   .header-cta-btn {
     display: none;
   }
+
   .hero-title {
     font-size: var(--font-size-3xl);
   }
+
   .hero-subtitle {
     font-size: var(--font-size-base);
   }
+
   .form-grid {
     grid-template-columns: 1fr;
   }
+
   .form-group-full {
     grid-column: span 1;
   }
+
   .footer-grid {
     grid-template-columns: 1fr;
   }
+
   .footer-bottom {
     flex-direction: column;
     text-align: center;
