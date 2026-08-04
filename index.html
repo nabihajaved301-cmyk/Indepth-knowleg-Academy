@@ -1,963 +1,856 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
-
-    
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Director Nabiha Javed - Indepth Knowledge Academy">
+  <meta name="google-site-verification" content="olIi0YYb6KyYKxqacEdqMsvg9S6M71KrC2X16PNwboU">
 
-    <meta name="google-site-verification" content="WoeU4gjcl7KPEEUpGfw5n6cTUtESbbXZ-MGPHW37nTQ" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Nabiha Javed">
-    
-    <!-- Optimized Title & Meta Description for Google Search -->
-    <title>Indepth Knowledge Academy | Matric, FSc, O & A Level Science Classes</title>
-    <meta name="description" content="Master Physics, Chemistry, Biology, and Computer Science at Indepth Knowledge Academy under Director Nabiha Javed. Syllabus-aligned coaching for SSC, HSSC, O-Level, and A-Level students.">
-    <meta name="keywords" content="Indepth Knowledge Academy, Class 9th Physics, Class 10th Chemistry, FSc Biology, O Level Computer Science, A Level Physics, Online Science Coaching">
+  <!-- SEO Title & Meta Description -->
+  <title>Indepth Knowledge Academy | Matric, FSc, O & A Level Science Classes</title>
+  <meta name="description"
+    content="Master Physics, Chemistry, Biology, and Computer Science at Indepth Knowledge Academy under Director Nabiha Javed. Syllabus-aligned coaching for SSC, HSSC, O/A Levels.">
+  <meta name="keywords"
+    content="Indepth Knowledge Academy, Class 9th Physics, Class 10th Chemistry, FSc Biology, O Level Computer Science, A Level Physics, Online Science Coaching, Pakistan Science Academy">
 
-    <!-- Social Media & WhatsApp Link Sharing Preview (Open Graph) -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://indepth-knowledge-academy.vercel.app/">
-    <meta property="og:title" content="Indepth Knowledge Academy | Science Coaching">
-    <meta property="og:description" content="Comprehensive academic preparation for Grade 9 to FSc, O-Level & A-Level under expert guidance.">
-    <meta property="og:image" content="your-backgroun.jpg">
+  <!-- OpenGraph Social Sharing Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://indepth-knowledge-academy.vercel.app/">
+  <meta property="og:title" content="Indepth Knowledge Academy | Premier Science Coaching">
+  <meta property="og:description"
+    content="Comprehensive academic preparation for SSC, HSSC, O-Level & A-Level under expert guidance of Director Nabiha Javed.">
+  <meta property="og:image" content="assets/images/your-backgroun.jpg">
 
-    <link rel="canonical" href="https://indepth-knowledge-academy.vercel.app/">
-        
-    <!-- Browser Tab Icon (Favicon) -->
-    <link class="favicon" rel="icon" type="image/png" href="your-backgroun.jpg">
+  <!-- Canonical URL & Favicon -->
+  <link rel="canonical" href="https://indepth-knowledge-academy.vercel.app/">
+  <link rel="icon" type="image/png" href="assets/images/your-backgroun.jpg">
 
-    <!-- Schema Markup for Search Engine Crawlers -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
-      "name": "Indepth Knowledge Academy",
-      "url": "https://nabihajaved301-cmyk.github.io/Indepth-knowleg-Academy/",
-      "founder": {
-        "@type": "Person",
-        "name": "Nabiha Javed"
-      }
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Structured Data JSON-LD Schema (EducationalOrganization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Indepth Knowledge Academy",
+    "url": "https://indepth-knowledge-academy.vercel.app/",
+    "logo": "https://indepth-knowledge-academy.vercel.app/assets/images/your-backgroun.jpg",
+    "description": "Leading science academy delivering comprehensive coaching in Physics, Chemistry, Biology, and Computer Science for SSC, HSSC, O-Level, and A-Level students globally.",
+    "founder": {
+      "@type": "Person",
+      "name": "Nabiha Javed",
+      "jobTitle": "Director & Lead Science Educator"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "PK"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Academic Science Programs",
+      "itemListElement": [
+        {
+          "@type": "Course",
+          "name": "Class 9th SSC Part-I Science Coaching",
+          "description": "Core foundation in Physics, Chemistry, Biology & Computer Science"
+        },
+        {
+          "@type": "Course",
+          "name": "Class 10th SSC Part-II Science Coaching",
+          "description": "Matric examination preparation and numerical mastery"
+        },
+        {
+          "@type": "Course",
+          "name": "O-Level CIE & Edexcel Science Preparation",
+          "description": "Experimental physics, organic chemistry, physiology and algorithmic logic"
+        },
+        {
+          "@type": "Course",
+          "name": "FSc & A-Level Advanced Science Coaching",
+          "description": "HSSC and Cambridge AS/A2 level comprehensive science curricula"
+        }
+      ]
     }
-    </script>
-
-    <style>
-        /* Modern Reset & Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        :root {
-            --primary-black: #1a1a1a;
-            --deep-brown: #3d2b1f;
-            --warm-tan: #8c786c;
-            --soft-pink: #f4dcd6;
-            --accent-pink: #e0b0a8;
-            --pure-white: #ffffff;
-            --light-bg: #faf8f7;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            background-color: var(--light-bg);
-            color: var(--primary-black);
-            line-height: 1.6;
-        }
-        /* Navigation Header */
-        header {
-            background-color: var(--primary-black);
-            padding: 10px 10%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-        .logo img {
-            height: 50px;
-            width: auto;
-            display: block;
-            object-fit: contain;
-            border-radius: 4px;
-        }
-        nav a {
-            color: var(--pure-white);
-            text-decoration: none;
-            margin-left: 2rem;
-            font-size: 0.95rem;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: var(--soft-pink);
-        }
-        /* Modern Hero Section */
-        .hero {
-            background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(61, 43, 31, 0.8)), 
-                        url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
-            background-position: center;
-            color: var(--pure-white);
-            padding: 8rem 10%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            min-height: 450px;
-        }
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .hero h1 {
-            font-size: 3.2rem;
-            margin-bottom: 1.5rem;
-            font-weight: 600;
-            letter-spacing: -0.5px;
-            line-height: 1.2;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-        }
-        .hero h1 span {
-            color: var(--soft-pink);
-        }
-        .hero p {
-            font-size: 1.25rem;
-            color: #eeeeee;
-            margin-bottom: 0;
-            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-            line-height: 1.5;
-        }
-        /* Main Section Styling */
-        .academic-section {
-            padding: 5rem 10%;
-        }
-        .main-title {
-            text-align: center;
-            font-size: 2.5rem;
-            color: var(--deep-brown);
-            margin-bottom: 4rem;
-        }
-        /* Class Row Setup */
-        .class-row {
-            margin-bottom: 5rem;
-            background-color: var(--pure-white);
-            padding: 2.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
-            border-left: 6px solid var(--deep-brown);
-        }
-        .class-heading {
-            font-size: 2rem;
-            color: var(--primary-black);
-            margin-bottom: 0.5rem;
-        }
-        .class-badge {
-            display: inline-block;
-            background-color: var(--soft-pink);
-            color: var(--deep-brown);
-            padding: 0.3rem 1rem;
-            font-size: 0.85rem;
-            font-weight: 600;
-            border-radius: 20px;
-            margin-bottom: 2rem;
-            text-transform: uppercase;
-        }
-        /* Subject Grid Column Framework */
-        .subject-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 1.5rem;
-        }
-        /* Subject Individual Column/Card */
-        .subject-column {
-            background: var(--light-bg);
-            border: 1px solid #e8e2de;
-            border-radius: 6px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .subject-column:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(61, 43, 31, 0.1);
-        }
-        /* Image Container inside Subject Column */
-        .subject-image-container {
-            width: 100%;
-            height: 160px;
-            background-color: #e2dcd8;
-            overflow: hidden;
-            position: relative;
-        }
-        .subject-image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-        /* Subject Details */
-        .subject-details {
-            padding: 1.2rem;
-            text-align: center;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .subject-details h4 {
-            font-size: 1.25rem;
-            color: var(--primary-black);
-            margin-bottom: 0.5rem;
-        }
-        .subject-details p {
-            font-size: 0.9rem;
-            color: var(--warm-tan);
-        }
-        /* Registration & Teacher Portal Forms */
-        .registration-section, .teacher-section {
-            background-color: var(--soft-pink);
-            padding: 5rem 10%;
-        }
-        .teacher-section {
-            background-color: #f0eae5;
-            border-top: 2px dashed var(--warm-tan);
-        }
-        .form-container {
-            max-width: 650px;
-            margin: 0 auto;
-            background: var(--pure-white);
-            padding: 3rem;
-            border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-        .form-group label {
-            display: block;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: var(--deep-brown);
-            font-size: 0.95rem;
-        }
-        .form-group input, 
-        .form-group select {
-            width: 100%;
-            padding: 0.8rem 1rem;
-            border: 1px solid #dddddd;
-            border-radius: 4px;
-            font-size: 1rem;
-            background-color: #fafafa;
-            transition: border-color 0.3s, background-color 0.3s;
-        }
-        .form-group input:focus, 
-        .form-group select:focus {
-            outline: none;
-            border-color: var(--accent-pink);
-            background-color: var(--pure-white);
-        }
-        .form-group input[type="file"] {
-            padding: 0.6rem;
-            background-color: #fff;
-            cursor: pointer;
-        }
-        .form-group .file-help-text {
-            display: block;
-            font-size: 0.8rem;
-            color: #777777;
-            margin-top: 0.3rem;
-        }
-        .submit-btn {
-            width: 100%;
-            background-color: var(--primary-black);
-            color: var(--pure-white);
-            border: none;
-            padding: 1rem;
-            font-size: 1rem;
-            font-weight: 600;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        .submit-btn:hover {
-            background-color: var(--deep-brown);
-        }
-        /* Notes Table Container */
-        .notes-table-container {
-            margin-top: 2.5rem;
-            background: var(--pure-white);
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        .notes-table-container h3 {
-            color: var(--deep-brown);
-            margin-bottom: 1.5rem;
-            font-size: 1.4rem;
-            border-bottom: 2px solid var(--soft-pink);
-            padding-bottom: 0.5rem;
-        }
-        .table-responsive {
-            width: 100%;
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-        }
-        .notes-table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: left;
-            min-width: 500px;
-        }
-        .notes-table th, .notes-table td {
-            padding: 1rem;
-            border-bottom: 1px solid #eeeeee;
-        }
-        .notes-table th {
-            background-color: var(--primary-black);
-            color: var(--pure-white);
-            font-size: 0.9rem;
-            text-transform: uppercase;
-        }
-        .notes-table tr:hover {
-            background-color: #fafafa;
-        }
-        .download-btn {
-            background-color: var(--accent-pink);
-            color: var(--deep-brown);
-            padding: 0.4rem 0.8rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 0.85rem;
-            transition: background-color 0.2s;
-            display: inline-block;
-        }
-        .download-btn:hover {
-            background-color: var(--warm-tan);
-            color: var(--pure-white);
-        }
-        /* Footer */
-        footer {
-            background-color: var(--primary-black);
-            color: #888888;
-            padding: 2.5rem 10%;
-            text-align: center;
-            font-size: 0.9rem;
-            border-top: 1px solid #2a2a2a;
-        }
-        footer p {
-            margin-bottom: 0.6rem;
-        }
-        footer .credits-container {
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid #252525;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        footer .credit-tag {
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: #aaaaaa;
-        }
-        footer .credit-tag span {
-            color: var(--accent-pink);
-            font-weight: 600;
-        }
-        /* Responsive CSS */
-        @media (max-width: 992px) {
-            .hero {
-                padding: 6rem 5%;
-                min-height: 400px;
-            }
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-        }
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                gap: 1rem;
-                padding: 15px 5%;
-            }
-            nav {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 1rem;
-            }
-            nav a {
-                margin: 0;
-            }
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            .class-row {
-                padding: 1.5rem;
-            }
-            .form-container {
-                padding: 2rem 1.5rem;
-            }
-            .notes-table th, .notes-table td {
-                padding: 0.8rem 0.5rem;
-                font-size: 0.85rem;
-            }
-        }
-    </style>
-
+  }
+  </script>
 </head>
 
 <body>
-    <script src="form.js"></script>
-    <!-- Header Navigation -->
-    <header>
-        <div class="logo">
-            <!-- Online logo placeholder that works out of the box -->
-            <img src="your-backgroun.jpg"
-        </div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#courses">Our Courses</a>
-            <!-- <a href="#portal">Upload Notes</a> -->
-            <a href="#register">Online Registration</a>
-        </nav>
-    </header>
 
-    <main id="home">
-
-    <!-- Clean Education-themed Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Mastering Sciences with <span>Indepth Knowledge</span></h1>
-            <p>Comprehensive, syllabus-aligned academic courses from Grade 9 to FSc, O-Level & A-Level designed to build strong foundations and achieve top scores under expert guidance.</p>
+  <!-- ================= HEADER & NAVIGATION ================= -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="#home" class="logo-brand" aria-label="Indepth Knowledge Academy Homepage">
+        <img src="assets/images/your-backgroun.jpg" alt="Indepth Knowledge Academy Emblem" class="logo-img" width="48"
+          height="48" loading="eager">
+        <div class="logo-text">
+          <span class="logo-title">Indepth Knowledge</span>
+          <span class="logo-subtitle">Academy of Sciences</span>
         </div>
+      </a>
+
+      <!-- Mobile Menu Navigation Toggle -->
+      <button class="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false"
+        aria-controls="primary-nav">
+        &#9776;
+      </button>
+
+      <!-- Primary Navigation Links -->
+      <nav id="primary-nav" class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#advantages" class="nav-link">Why Us</a>
+        <a href="#courses" class="nav-link">Programs</a>
+        <a href="#lectures" class="nav-link">Sample Lectures</a>
+        <a href="#resources" class="nav-link">Study Notes</a>
+        <a href="#register" class="nav-link">Registration</a>
+      </nav>
+
+      <a href="#register" class="header-cta-btn">Enroll Now</a>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+
+    <!-- ================= HERO SECTION (POLISHED BACKGROUND WITH MINIMAL OPACITY) ================= -->
+    <section class="hero-section" id="home" aria-labelledby="hero-title-text">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="trust-badge">
+              <span class="trust-badge-dot"></span>
+              <span>Providing online classes for students all across the globe</span>
+            </div>
+
+            <!-- Single Unique H1 Heading -->
+            <h1 id="hero-title-text" class="hero-title">
+              Empowering Next-Generation Scholars with <span>Indepth Knowledge</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Syllabus-aligned, concept-first science coaching for Grade 9 to FSc Part-II, O-Level & A-Level. Build
+              strong fundamentals, master past papers, and achieve top grades under expert leadership.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#register" class="btn-primary">
+                Book a Free 3-Day Trial
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#courses" class="btn-secondary">Explore Academic Programs</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- All Academic Levels Section -->
-    <section class="academic-section" id="courses">
-        <h2 class="main-title">Academic Programs By Level</h2>
+    <!-- ================= ABOUT US SECTION (BALANCED ALIGNMENT) ================= -->
+    <section class="section-padding about-section" id="about" aria-labelledby="about-title">
+      <div class="container">
 
-        <!-- ================= CLASS 9TH ROW ================= -->
-        <div class="class-row">
-            <h3 class="class-heading">Class 9th</h3>
-            <span class="class-badge">SSC Part I</span>
-            <div class="subject-grid">
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=400&q=80" 
-                        alt="Class 9th Physics Course - Core Foundations and Numericals" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Physics</h4>
-                        <p>Core Foundations & Numericals</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1617155093730-a8bf47be792d?auto=format&fit=crop&w=400&q=80" 
-                        alt="Class 9th Chemistry Course - Basic Chemical Principles" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Chemistry</h4>
-                        <p>Basic Chemical Principles</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=400&q=80" alt="Class 9th Biology Course - Introduction to Living Systems" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Biology</h4>
-                        <p>Introduction to Living Systems</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80"
-                         alt="Class 9th Computer Science Course - Fundamentals & Computing Concepts" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Computer Science</h4>
-                        <p>Fundamentals & Computing Concepts</p>
-                    </div>
-                </div>
-            </div>
+        <!-- Centered Section Header -->
+        <div class="section-header">
+          <span class="section-tag">About Our Academy</span>
+          <h2 id="about-title" class="section-title">Dedicated to Conceptual Clarity & Academic Mastery</h2>
+          <p class="section-subtitle">Bridging the gap between rote memorization and true scientific comprehension
+            across SSC, HSSC, and Cambridge O & A Levels.</p>
         </div>
 
-        <!-- ================= CLASS 10TH ROW ================= -->
-        <div class="class-row">
-            <h3 class="class-heading">Class 10th</h3>
-            <span class="class-badge">SSC Part II</span>
-            <div class="subject-grid">
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=400&q=80" 
-                        alt="Class 10th Physics Course - Advanced Matric Frameworks" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Physics</h4>
-                        <p>Advanced Matric Frameworks</p>
-                    </div>
-                </div>
+        <!-- Balanced Grid Content -->
+        <div class="about-grid">
+          <div class="about-content">
+            <h3>Academic Excellence Under Expert Guidance</h3>
+            <p>
+              At <strong>Indepth Knowledge Academy</strong>, we nurture critical thinking and top examination results.
+              Our tailored academic frameworks serve students preparing for Matric (SSC), FSc (HSSC), and Cambridge O &
+              A Level qualifications globally.
+            </p>
+            <p>
+              Under the direct leadership of <strong>Director Nabiha Javed</strong>, our student-centric methodologies
+              combine rigorous past-paper drills, individualized doubt-clearing sessions, and structured progress
+              tracking designed for modern remote learning.
+            </p>
 
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?auto=format&fit=crop&w=400&q=80" 
-                        alt="Class 10th Chemistry Course - Organic & Environmental Applications" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Chemistry</h4>
-                        <p>Organic & Environmental Applications</p>
-                    </div>
-                </div>
+            <ul class="authority-list" role="list">
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Custom-tailored learning frameworks aligned to Federal, Punjab, and CIE Boards.</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Rigorous numerical problem-solving workshops for Physics & Chemistry.</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>1-on-1 student mentorship with proactive weekly feedback loops.</span>
+              </li>
+            </ul>
 
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=400&q=80" 
-                        alt="Class 10th Biology Course - Genetics & Continuity of Life" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Biology</h4>
-                        <p>Genetics & Continuity of Life</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=80" 
-                        alt="Class 10th Computer Science Course - Logic Design & Basic Programming" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Computer Science</h4>
-                        <p>Logic Design & Basic Programming</p>
-                    </div>
-                </div>
+            <div class="about-stats">
+              <div class="stat-card">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Board Exam Distinction Rate</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">1,200+</div>
+                <div class="stat-label">Students Guided Globally</div>
+              </div>
             </div>
+          </div>
+
+          <div class="about-visual">
+            <div class="director-card">
+              <span class="director-badge">Director's Message</span>
+              <h3 class="director-name">Nabiha Javed</h3>
+              <p class="director-title">Director & Head of Science Academals</p>
+              <blockquote class="director-quote">
+                "Our philosophy is simple: science is not about memorizing definitions—it is about unlocking how the
+                universe operates. When students understand the underlying principles, top marks follow naturally."
+              </blockquote>
+            </div>
+          </div>
         </div>
 
-        <!-- ================= O LEVEL ROW ================= -->
-        <div class="class-row">
-            <h3 class="class-heading">O-Level</h3>
-            <span class="class-badge">Cambridge / Edexcel</span>
-            <div class="subject-grid">
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=400&q=80" 
-                        alt="O-Level Physics - CIE / Edexcel Core Physics Concepts" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Physics</h4>
-                        <p>CIE / Edexcel Core Physics Concepts</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&w=400&q=80" 
-                        alt="O-Level Chemistry - Experimental & Structural Chemistry" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Chemistry</h4>
-                        <p>Experimental & Structural Chemistry</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?auto=format&fit=crop&w=400&q=80" 
-                        alt="O-Level Biology - Human Physiology & Ecology Syllabus" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Biology</h4>
-                        <p>Human Physiology & Ecology Syllabus</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=400&q=80" 
-                        alt="O-Level Computer Science - Algorithmic Logic & Programming" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Computer Science</h4>
-                        <p>Algorithmic Logic & Programming</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ================= FSC PART 1 (11th) ROW ================= -->
-        <div class="class-row">
-            <h3 class="class-heading">FSc Part-I</h3>
-            <span class="class-badge">HSSC Part I (Grade 11)</span>
-            <div class="subject-grid">
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=400&q=80" 
-                        alt="11th Physics - Mechanics, Waves & Thermodynamics" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Physics</h4>
-                        <p>Mechanics, Waves & Thermodynamics</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?auto=format&fit=crop&w=400&q=80" 
-                        alt="11th Chemistry - Physical & Inorganic Foundations" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Chemistry</h4>
-                        <p>Physical & Inorganic Foundations</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=400&q=80" 
-                        alt="11th Biology - Cell Biology & Variety of Life" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Biology</h4>
-                        <p>Cell Biology & Variety of Life</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=400&q=80" 
-                        alt="11th Computer Science - Information Technology Systems" loading="lazy">
-
-                    </div>
-                    <div class="subject-details">
-                        <h4>Computer Science</h4>
-                        <p>Information Technology Systems</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ================= A LEVEL ROW ================= -->
-        <div class="class-row">
-            <h3 class="class-heading">A-Level</h3>
-            <span class="class-badge">Advanced Level (AS & A2)</span>
-            <div class="subject-grid">
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1607988795691-3d0147b43231?auto=format&fit=crop&w=400&q=80" 
-                        alt="A-Level Physics - Advanced Mechanics, Fields & Nuclear Physics" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Physics</h4>
-                        <p>Advanced Mechanics, Fields & Nuclear Physics</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=400&q=80" 
-                        alt="A-Level Chemistry - Advanced Physical, Organic & Spectroscopy" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Chemistry</h4>
-                        <p>Advanced Physical, Organic & Spectroscopy</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=400&q=80" 
-                        alt="A-Level Biology - Biochemistry, Genetics & Gene Technology" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Biology</h4>
-                        <p>Biochemistry, Genetics & Gene Technology</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=400&q=80" 
-                        alt="A-Level Computer Science - Advanced Systems & Software Development" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Computer Science</h4>
-                        <p>Advanced Systems & Software Development</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ================= FSC PART 2 (12th) ROW ================= -->
-        <div class="class-row">
-            <h3 class="class-heading">FSc Part-II</h3>
-            <span class="class-badge">HSSC Part II (Grade 12)</span>
-            <div class="subject-grid">
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=400&q=80" 
-                        alt="12th Physics - Electricity, Magnetism & Atomic Physics" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Physics</h4>
-                        <p>Electricity, Magnetism & Atomic Physics</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1617155093730-a8bf47be792d?auto=format&fit=crop&w=400&q=80" 
-                        alt="12th Chemistry - Advanced Organic & Analytical Systems" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Chemistry</h4>
-                        <p>Advanced Organic & Analytical Systems</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=400&q=80" 
-                        alt="12th Biology - Homeostasis, Support & Coordination" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Biology</h4>
-                        <p>Homeostasis, Support & Coordination</p>
-                    </div>
-                </div>
-
-                <div class="subject-column">
-                    <div class="subject-image-container">
-                        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=400&q=80" 
-                        alt="12th Computer Science - Database Management & C Programming" loading="lazy">
-                    </div>
-                    <div class="subject-details">
-                        <h4>Computer Science</h4>
-                        <p>Database Management & C Programming</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
-    <!-- ================= TEACHER / ADMIN PORTAL SECTION ================= -->
-    <!-- <section class="teacher-section" id="portal">
-        <h2 class="main-title" style="margin-bottom: 2rem;">Teacher Portal — Upload Study Notes</h2>
-        <div class="form-container">
-            <form id="uploadNotesForm" onsubmit="addUploadedNote(event)">
-                <div class="form-group">
-                    <label for="notes-title">Notes Topic / Chapter Name</label>
-                    <input type="text" id="notes-title" placeholder="e.g., Plasma Membrane structure, Cell Transport" required>
-                </div>
+    <!-- ================= THE VALUE GRID SECTION ================= -->
+    <section class="section-padding value-section" id="advantages" aria-labelledby="advantages-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Why Families Choose Us</span>
+          <h2 id="advantages-title" class="section-title">Built Around Student Success & Parent Transparency</h2>
+          <p class="section-subtitle">Discover our operational framework engineered to provide clarity, flexibility, and
+            measurable academic growth.</p>
+        </div>
 
-                <div class="form-group">
-                    <label for="notes-grade">Target Class / Level</label>
-                    <select id="notes-grade" required>
-                        <option value="" disabled selected>Select Level</option>
-                        <option value="Class 9th">Class 9th (SSC-I)</option>
-                        <option value="Class 10th">Class 10th (SSC-II)</option>
-                        <option value="O-Level">O-Level (CIE / Edexcel)</option>
-                        <option value="FSc Part-I">FSc Part-I (Grade 11)</option>
-                        <option value="A-Level">A-Level (AS & A2)</option>
-                        <option value="FSc Part-II">FSc Part-II (Grade 12)</option>
-                    </select>
-                </div>
+        <div class="value-grid">
+          <!-- Card 1 -->
+          <article class="value-card">
+            <div class="value-icon-box" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="value-title">Customizable Schedules</h3>
+            <p class="value-desc">
+              Flexible live class timing windows designed to accommodate students across Pakistan, the Middle East, and
+              European time zones without compromising regular school hours.
+            </p>
+          </article>
 
-                <div class="form-group">
-                    <label for="notes-subject">Subject</label>
-                    <select id="notes-subject" required>
-                        <option value="" disabled selected>Select Subject</option>
-                        <option value="Physics">Physics</option>
-                        <option value="Chemistry">Chemistry</option>
-                        <option value="Biology">Biology</option>
-                        <option value="Computer Science">Computer Science</option>
-                    </select>
-                </div>
+          <!-- Card 2 -->
+          <article class="value-card">
+            <div class="value-icon-box" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <h3 class="value-title">Rigid Weekly Assessments</h3>
+            <p class="value-desc">
+              Structured exam-pattern tests, chapter-wise evaluations, and thorough past-paper drills conducted weekly
+              to build confidence and time-management under real exam conditions.
+            </p>
+          </article>
 
-                <div class="form-group">
-                    <label for="teacher-file">Choose Notes File</label>
-                    <input type="file" id="teacher-file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" required>
-                    <span class="file-help-text">Upload .docx, .pdf, or image file notes.</span>
-                </div>
 
-                <button type="submit" class="submit-btn">Publish Notes on Website</button>
+
+          <!-- Card 3 -->
+          <article class="value-card">
+            <div class="value-icon-box" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <h3 class="value-title">Conceptual Study Kits</h3>
+            <p class="value-desc">
+              Access to exclusive high-yield revision notes, diagram workbooks, numerical formula sheets, and recorded
+              class archives for effortless continuous revision.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROGRAMS CATALOG GRID SECTION ================= -->
+    <section class="section-padding programs-section" id="courses" aria-labelledby="programs-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Offerings</span>
+          <h2 id="programs-title" class="section-title">Programs Catalog By Academic Level</h2>
+          <p class="section-subtitle">Structured science courses designed for board syllabus alignment, practical
+            numerical mastery, and top percentile outcomes.</p>
+        </div>
+
+        <div class="programs-grid">
+
+          <!-- Program 1: Class 9th -->
+          <article class="program-card">
+            <div class="program-img-wrapper">
+              <img src="assets/images/10th-Physics.jpg" alt="Class 9th SSC Science Class Room" loading="lazy"
+                width="400" height="200">
+              <span class="program-level-badge">Class 9th (SSC-I)</span>
+            </div>
+            <div class="program-body">
+              <h3 class="program-title">Class 9th Core Foundation</h3>
+              <p class="program-subtitle">Federal, Punjab & Regional Boards</p>
+
+              <div class="program-meta">
+                <span class="meta-tag">Duration: 12 Months</span>
+                <span class="meta-tag">Format: Live & Recorded</span>
+              </div>
+
+              <div class="subject-list-tags">
+                <span class="subject-pill">Physics</span>
+                <span class="subject-pill">Chemistry</span>
+                <span class="subject-pill">Biology</span>
+                <span class="subject-pill">Computer Science</span>
+              </div>
+
+              <div class="program-card-footer">
+                <a href="#register" class="enroll-btn" data-enroll-level="9th">Enroll in Class 9th</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Program 2: Class 10th -->
+          <article class="program-card">
+            <div class="program-img-wrapper">
+              <img src="assets/images/10th-chemistry.jpg" alt="Class 10th SSC Chemistry & Science Class" loading="lazy"
+                width="400" height="200">
+              <span class="program-level-badge">Class 10th (SSC-II)</span>
+            </div>
+            <div class="program-body">
+              <h3 class="program-title">Class 10th Board Mastery</h3>
+              <p class="program-subtitle">Matric Board Specialization</p>
+
+              <div class="program-meta">
+                <span class="meta-tag">Duration: 12 Months</span>
+                <span class="meta-tag">Format: Live & Recorded</span>
+              </div>
+
+              <div class="subject-list-tags">
+                <span class="subject-pill">Physics</span>
+                <span class="subject-pill">Chemistry</span>
+                <span class="subject-pill">Biology</span>
+                <span class="subject-pill">Computer Science</span>
+              </div>
+
+              <div class="program-card-footer">
+                <a href="#register" class="enroll-btn" data-enroll-level="10th">Enroll in Class 10th</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Program 3: O-Level -->
+          <article class="program-card">
+            <div class="program-img-wrapper">
+              <img src="assets/images/o-chemistry.jpg" alt="O Level Cambridge Science Coaching" loading="lazy"
+                width="400" height="200">
+              <span class="program-level-badge">O-Level (CIE / Edexcel)</span>
+            </div>
+            <div class="program-body">
+              <h3 class="program-title">Cambridge O-Level Science</h3>
+              <p class="program-subtitle">Syllabus 5054 / 5070 / 5090 / 2210</p>
+
+              <div class="program-meta">
+                <span class="meta-tag">Duration: 1-2 Years</span>
+                <span class="meta-tag">Format: Small Group / 1-on-1</span>
+              </div>
+
+              <div class="subject-list-tags">
+                <span class="subject-pill">Physics 5054</span>
+                <span class="subject-pill">Chemistry 5070</span>
+                <span class="subject-pill">Biology 5090</span>
+                <span class="subject-pill">CS 2210</span>
+              </div>
+
+              <div class="program-card-footer">
+                <a href="#register" class="enroll-btn" data-enroll-level="O-Level">Enroll in O-Level</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Program 4: FSc Part-I -->
+          <article class="program-card">
+            <div class="program-img-wrapper">
+              <img src="assets/images/11th-physics.jpg" alt="11th Grade FSc Pre-Medical & Pre-Engineering Physics"
+                loading="lazy" width="400" height="200">
+              <span class="program-level-badge">FSc Part-I (Grade 11)</span>
+            </div>
+            <div class="program-body">
+              <h3 class="program-title">FSc Part-I Intermediate</h3>
+              <p class="program-subtitle">HSSC Part 1 Pre-Medical / Pre-Eng</p>
+
+              <div class="program-meta">
+                <span class="meta-tag">Duration: Academic Year</span>
+                <span class="meta-tag">Format: Interactive Live</span>
+              </div>
+
+              <div class="subject-list-tags">
+                <span class="subject-pill">Physics</span>
+                <span class="subject-pill">Chemistry</span>
+                <span class="subject-pill">Biology</span>
+                <span class="subject-pill">Computer Science</span>
+              </div>
+
+              <div class="program-card-footer">
+                <a href="#register" class="enroll-btn" data-enroll-level="FSc Part-I">Enroll in FSc Part-I</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Program 5: FSc Part-II -->
+          <article class="program-card">
+            <div class="program-img-wrapper">
+              <img src="assets/images/12th-physics.jpg" alt="12th Grade FSc Part II Science Class" loading="lazy"
+                width="400" height="200">
+              <span class="program-level-badge">FSc Part-II (Grade 12)</span>
+            </div>
+            <div class="program-body">
+              <h3 class="program-title">FSc Part-II Intermediate</h3>
+              <p class="program-subtitle">HSSC Part 2 Board Preparation</p>
+
+              <div class="program-meta">
+                <span class="meta-tag">Duration: Academic Year</span>
+                <span class="meta-tag">Format: Interactive Live</span>
+              </div>
+
+              <div class="subject-list-tags">
+                <span class="subject-pill">Physics</span>
+                <span class="subject-pill">Chemistry</span>
+                <span class="subject-pill">Biology</span>
+                <span class="subject-pill">Computer Science</span>
+              </div>
+
+              <div class="program-card-footer">
+                <a href="#register" class="enroll-btn" data-enroll-level="FSc Part-II">Enroll in FSc Part-II</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Program 6: A-Level -->
+          <article class="program-card">
+            <div class="program-img-wrapper">
+              <img src="assets/images/a-physics.jpg" alt="A Level Advanced Physics & Chemistry Coaching" loading="lazy"
+                width="400" height="200">
+              <span class="program-level-badge">A-Level (AS & A2)</span>
+            </div>
+            <div class="program-body">
+              <h3 class="program-title">Cambridge A-Level Science</h3>
+              <p class="program-subtitle">CIE / Edexcel AS & A2 Modules</p>
+
+              <div class="program-meta">
+                <span class="meta-tag">Duration: 2 Academic Years</span>
+                <span class="meta-tag">Format: Intensive Coaching</span>
+              </div>
+
+              <div class="subject-list-tags">
+                <span class="subject-pill">Physics 9702</span>
+                <span class="subject-pill">Chemistry 9701</span>
+                <span class="subject-pill">Biology 9700</span>
+                <span class="subject-pill">CS 9618</span>
+              </div>
+
+              <div class="program-card-footer">
+                <a href="#register" class="enroll-btn" data-enroll-level="A-Level">Enroll in A-Level</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SAMPLE LECTURES SECTION (HIGH-QUALITY THUMBNAILS & EMBEDS) ================= -->
+    <section class="section-padding lectures-section" id="lectures" aria-labelledby="lectures-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Classroom Preview</span>
+          <h2 id="lectures-title" class="section-title">Sample Class Video Lectures</h2>
+          <p class="section-subtitle">Experience our engaging teaching methodology, visual concept breakdowns, and
+            step-by-step problem-solving demonstrations.</p>
+        </div>
+
+        <div class="lectures-grid">
+          <!-- Lecture 1 -->
+          <article class="lecture-card">
+            <div class="video-wrapper" data-video-src="https://www.youtube.com/embed/LXb3EKWsInQ"
+              data-video-title="Class 10th Physics Sample Lecture">
+              <img src="assets/images/10th-Physics.jpg" alt="Class 10th Physics Lecture Poster" class="video-poster-img"
+                loading="lazy">
+              <div class="video-play-btn" aria-label="Play Physics Lecture">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+            </div>
+            <div class="lecture-info">
+              <span class="lecture-badge">Physics</span>
+              <h3 class="lecture-title">Newton's Laws of Motion & Numerical Mastery</h3>
+              <p class="lecture-topic">Class 10th / O-Level Physics Demo Lecture</p>
+            </div>
+          </article>
+
+          <!-- Lecture 2 -->
+          <article class="lecture-card">
+            <div class="video-wrapper" data-video-src="https://www.youtube.com/embed/LXb3EKWsInQ"
+              data-video-title="FSc Chemistry Sample Lecture">
+              <img src="assets/images/11th-chemistry.jpg" alt="FSc Chemistry Lecture Poster" class="video-poster-img"
+                loading="lazy">
+              <div class="video-play-btn" aria-label="Play Chemistry Lecture">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+            </div>
+            <div class="lecture-info">
+              <span class="lecture-badge">Chemistry</span>
+              <h3 class="lecture-title">Chemical Bonding & Orbital Hybridization</h3>
+              <p class="lecture-topic">FSc Part-I / A-Level Chemistry Demo Lecture</p>
+            </div>
+          </article>
+
+          <!-- Lecture 3 -->
+          <article class="lecture-card">
+            <div class="video-wrapper" data-video-src="https://www.youtube.com/embed/rfscVS0vtbw"
+              data-video-title="Biology Sample Lecture">
+              <img src="assets/images/11th-biology.jpg" alt="Biology Lecture Poster" class="video-poster-img"
+                loading="lazy">
+              <div class="video-play-btn" aria-label="Play Biology Lecture">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+            </div>
+            <div class="lecture-info">
+              <span class="lecture-badge">Biology</span>
+              <h3 class="lecture-title">Cell Membrane Physiology & Molecular Transport</h3>
+              <p class="lecture-topic">Class 9th / FSc Biology Demo Lecture</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= UNIFIED LEAD CONVERSION FORM ================= -->
+    <section class="section-padding registration-section" id="register" aria-labelledby="register-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Start Your Journey</span>
+          <h2 id="register-title" class="section-title">Online Student Registration</h2>
+          <p class="section-subtitle">Complete the form below to secure your seat or book a trial class. Our team will
+            contact you within 24 hours.</p>
+        </div>
+
+        <div class="form-wrapper" id="form-wrapper">
+          <form id="student-registration-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <!-- Web3Forms API Hidden Parameters -->
+            <input type="hidden" name="access_key" value="75689110-ca5c-4e39-abfa-f3f4c56ea6d0">
+            <input type="hidden" name="subject" value="New Student Registration - Indepth Knowledge Academy">
+            <input type="hidden" name="from_name" value="Indepth Knowledge Academy Portal">
+
+            <div class="form-grid">
+              <!-- Full Name -->
+              <div class="form-group form-group-full">
+                <label for="student-name">Student Full Name *</label>
+                <input type="text" id="student-name" name="Student Name" class="form-control"
+                  placeholder="e.g., Muhammad Ali" required>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="Email" class="form-control" placeholder="student@gmail.com"
+                  required>
+              </div>
+
+              <!-- Phone / WhatsApp -->
+              <div class="form-group">
+                <label for="phone">Phone / WhatsApp Number *</label>
+                <input type="tel" id="phone" name="Phone" class="form-control" placeholder="+92 300 1234567" required>
+              </div>
+
+              <!-- Grade / Level -->
+              <div class="form-group">
+                <label for="grade">Select Class / Level *</label>
+                <select id="grade" name="Grade" class="form-control" required>
+                  <option value="" disabled selected>Choose target class</option>
+                  <option value="9th">Class 9th (SSC-I)</option>
+                  <option value="10th">Class 10th (SSC-II)</option>
+                  <option value="O-Level">O-Level (CIE / Edexcel)</option>
+                  <option value="FSc Part-I">FSc Part-I (HSSC-I)</option>
+                  <option value="FSc Part-II">FSc Part-II (HSSC-II)</option>
+                  <option value="A-Level">A-Level (CIE / Edexcel)</option>
+                </select>
+              </div>
+
+              <!-- Subject Choice -->
+              <div class="form-group">
+                <label for="subject">Select Specific Subject Focus *</label>
+                <select id="subject" name="Subject Focus" class="form-control" required>
+                  <option value="" disabled selected>Choose subject focus</option>
+                  <option value="All Science Subjects Bundle">All Science Subjects Bundle</option>
+                  <option value="Physics Focus">Physics Focus</option>
+                  <option value="Chemistry Focus">Chemistry Focus</option>
+                  <option value="Biology Focus">Biology Focus</option>
+                  <option value="Computer Science Focus">Computer Science Focus</option>
+                </select>
+              </div>
+
+              <!-- Contextual Action Dropdown (Requirement #4) -->
+              <div class="form-group form-group-full">
+                <label for="registration-reason">Interested Program / Reason for Registration *</label>
+                <select id="registration-reason" name="Registration Objective" class="form-control" required>
+                  <option value="" disabled selected>Select your enrollment intent</option>
+                  <option value="Book a Free 3-Day Trial Class">Book a Free 3-Day Trial Class</option>
+                  <option value="Regular Academic Course Enrollment">Regular Academic Course Enrollment</option>
+                  <option value="Exam Preparation">Competitive Examination Preparation Prep
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" class="submit-btn-main" style="margin-top: 1rem;">
+              Complete Registration
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STUDY NOTES & TEACHER PORTAL ================= -->
+    <section class="section-padding resources-section" id="resources" aria-labelledby="resources-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Learning Repository</span>
+          <h2 id="resources-title" class="section-title">Download Study Resources & Chapter Notes</h2>
+          <p class="section-subtitle">Access curated revision guides, chapter summaries, and past-paper answer keys
+            published by our faculty.</p>
+        </div>
+
+        <div style="max-width: 900px; margin: 0 auto;">
+          <div class="table-responsive">
+            <table class="resources-table" aria-label="Available Study Resources Table">
+              <thead>
+                <tr>
+                  <th scope="col">Academic Level</th>
+                  <th scope="col">Subject</th>
+                  <th scope="col">Chapter / Topic Title</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody id="notes-list-body">
+                <tr>
+                  <td>Class 9th</td>
+                  <td>Biology</td>
+                  <td>Cell Membrane Structure & Transport Mechanism</td>
+                  <td><a href="#" class="download-link"
+                      onclick="alert('Downloading Class 9th Biology Notes PDF...'); return false;">Download PDF</a></td>
+                </tr>
+                <tr>
+                  <td>Class 10th</td>
+                  <td>Physics</td>
+                  <td>Simple Harmonic Motion & Waves Numerical Guide</td>
+                  <td><a href="#" class="download-link"
+                      onclick="alert('Downloading Class 10th Physics PDF...'); return false;">Download PDF</a></td>
+                </tr>
+                <tr>
+                  <td>FSc Part-I</td>
+                  <td>Chemistry</td>
+                  <td>Spectroscopy & Atomic Structure Study Guide</td>
+                  <td><a href="#" class="download-link"
+                      onclick="alert('Downloading FSc Chemistry PDF...'); return false;">Download PDF</a></td>
+                </tr>
+                <tr>
+                  <td>O-Level</td>
+                  <td>Computer Science</td>
+                  <td>Logic Gates & Algorithmic Problem Solving</td>
+                  <td><a href="#" class="download-link"
+                      onclick="alert('Downloading O-Level CS PDF...'); return false;">Download PDF</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Teacher Portal Collapsible Upload Form -->
+          <div
+            style="margin-top: 3rem; background: var(--color-light-bg); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+            <h3 style="font-size: 1.2rem; color: var(--color-deep-brown); margin-bottom: 1rem;">Teacher Portal — Upload
+              New Class Notes</h3>
+            <form id="uploadNotesForm">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="notes-title">Topic / Chapter Title</label>
+                  <input type="text" id="notes-title" class="form-control" placeholder="e.g., Organic Synthesis Notes"
+                    required>
+                </div>
+                <div class="form-group">
+                  <label for="notes-grade">Academic Level</label>
+                  <select id="notes-grade" class="form-control" required>
+                    <option value="" disabled selected>Select Level</option>
+                    <option value="Class 9th">Class 9th</option>
+                    <option value="Class 10th">Class 10th</option>
+                    <option value="O-Level">O-Level</option>
+                    <option value="FSc Part-I">FSc Part-I</option>
+                    <option value="FSc Part-II">FSc Part-II</option>
+                    <option value="A-Level">A-Level</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="notes-subject">Subject</label>
+                  <select id="notes-subject" class="form-control" required>
+                    <option value="" disabled selected>Select Subject</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Biology">Biology</option>
+                    <option value="Computer Science">Computer Science</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="teacher-file">Select PDF / Document</label>
+                  <input type="file" id="teacher-file" class="form-control" accept=".pdf,.doc,.docx,.jpg,.png" required
+                    style="padding: 0.5rem;">
+                </div>
+              </div>
+              <button type="submit" class="submit-btn-main"
+                style="margin-top: 1rem; width: auto; padding: 0.75rem 1.5rem;">
+                Publish Notes to Repository
+              </button>
             </form>
-
-            <div class="notes-table-container">
-                <h3>Download Study Resources</h3>
-                <div class="table-responsive">
-                    <table class="notes-table">
-                        <thead>
-                            <tr>
-                                <th>Class</th>
-                                <th>Subject</th>
-                                <th>Topic</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody id="notes-list-body">
-                            Default placeholder notes
-                            <tr>
-                                <td>Class 9th</td>
-                                <td>Biology</td>
-                                <td>Cell Membrane & Cell Theory Notes</td>
-                                <td><a href="#" class="download-btn" onclick="alert('Downloading sample file...')">Download Docx</a></td>
-                            </tr>
-                            <tr>
-                                <td>FSc Part-I</td>
-                                <td>Chemistry</td>
-                                <td>Chemical Shift and Spectroscopy Basics</td>
-                                <td><a href="#" class="download-btn" onclick="alert('Downloading sample file...')">Download PDF</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Online Class Registration Section -->
-    <section class="section registration-section" id="register">
-        <h2 class="main-title" style="margin-bottom: 2rem;">Online Class Registration</h2>
-        <div class="form-container">
-            <form id="student-registration-form" action="#" method="POST">
-                <input type="hidden" name="access_key" value="75689110-ca5c-4e39-abfa-f3f4c56ea6d0">
-                <input type="hidden" name="subject" value="New Student Registration">
-                <input type="hidden" name="from_name" value="Indepth Knowledge Academy Website">
-            
-                <div class="form-group">
-                    <label for="student-name">Student Full Name</label>
-                    <input type="text" id="student-name" name="Student Name" placeholder="Enter student's name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="Email" placeholder="Enter contact email address" required>
-                </div>
+  </main>
 
-                <div class="form-group">
-                    <label for="phone">Phone / WhatsApp Number</label>
-                    <input type="tel" id="phone" name="Phone" placeholder="e.g., +92 300 1234567" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="grade">Select Class / Level</label>
-                    <select id="grade" name="Grade"  required>
-                        <option value="" disabled selected>Choose target class</option>
-                        <option value="9th">Class 9th (SSC-I)</option>
-                        <option value="10th">Class 10th (SSC-II)</option>
-                        <option value="O-Level">O-Level (CIE / Edexcel)</option>
-                        <option value="FSc Part-I">FSc Part-I (HSSC-I)</option>
-                        <option value="A-Level">A-Level (CIE / Edexcel)</option>
-                        <option value="FSc Part-II">FSc Part-II (HSSC-II)</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="subject">Select Specific Subject Course</label>
-                    <select id="subject" name="Subject" required>
-                        <option value="" disabled selected>Select subject focus</option>
-                        <option value="All Science Subjects">All Science Subjects Bundle</option>
-                        <option value="Physics">Physics</option>
-                        <option value="Chemistry">Chemistry</option>
-                        <option value="Biology">Biology</option>
-                        <option value="Computer Science">Computer Science</option>
-                    </select>
-                </div>
-
-                <button type="submit" class="submit-btn">Register for Online Classes</button>
-            </form>
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Indepth Knowledge Academy</h3>
+          <p>
+            Delivering excellence in science education across Matric, Intermediate, and Cambridge systems. Building
+            conceptual foundations for future engineers, doctors, and technologists.
+          </p>
         </div>
-    </section>
-    </main>
 
-    <!-- Footer -->
-    <footer>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Director</a></li>
+            <li><a href="#advantages">Academy Benefits</a></li>
+            <li><a href="#courses">Programs Catalog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Academic Levels</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="#courses">Class 9th & 10th</a></li>
+            <li><a href="#courses">FSc Part-I & II</a></li>
+            <li><a href="#courses">O-Level (CIE)</a></li>
+            <li><a href="#courses">A-Level (AS & A2)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact & Info</h4>
+          <ul class="footer-links" role="list">
+            <li>Director: Nabiha Javed</li>
+            <li>Online Global Academy</li>
+            <li>WhatsApp Enrollment Active</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Centered Social Contact Icons (FB, Insta, WhatsApp, YouTube) -->
+      <div class="footer-social-container">
+        <p class="social-heading">Connect With Us</p>
+        <div class="social-icons-group">
+          <!-- Facebook -->
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn facebook"
+            aria-label="Facebook Page">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn instagram"
+            aria-label="Instagram Profile">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/923001234567" target="_blank" rel="noopener noreferrer"
+            class="social-icon-btn whatsapp" aria-label="WhatsApp Contact">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+              </path>
+            </svg>
+          </a>
+
+          <!-- YouTube -->
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn youtube"
+            aria-label="YouTube Channel">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+              </path>
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
         <p>&copy; 2026 Indepth Knowledge Academy. All Rights Reserved.</p>
-        <div>
-            <p>Owner / Director: <strong>Nabiha Javed</strong></p>
-            <p>Designed by: <strong>Hannan Javed</strong></p>
-        </div>
-    </footer>
+        <p class="footer-credits">
+          Owner & Director: <span>Nabiha Javed</span> | Designed by <span>Hannan Javed</span>
+        </p>
+      </div>
+    </div>
+  </footer>
 
-    <!-- JavaScript logic for dynamic behaviors -->
-    <script>
-        function addUploadedNote(event) {
-            event.preventDefault();
-
-            // Get form element values
-            const titleInput = document.getElementById('notes-title');
-            const gradeInput = document.getElementById('notes-grade');
-            const subjectInput = document.getElementById('notes-subject');
-            const fileInput = document.getElementById('teacher-file');
-
-            const title = titleInput.value.trim();
-            const grade = gradeInput.value;
-            const subject = subjectInput.value;
-            const file = fileInput.files[0];
-
-            if (!title || !grade || !subject || !file) {
-                alert('Please fill in all fields and select a valid file.');
-                return;
-            }
-
-            // Extract file extension to display in download button label
-            const filename = file.name;
-            const extension = filename.slice(((filename.lastIndexOf(".") - 1) >>> 0) + 2).toUpperCase() || 'FILE';
-
-            // Reference to the notes table body
-            const tableBody = document.getElementById('notes-list-body');
-
-            // Create a new row dynamically
-            const newRow = document.createElement('tr');
-
-            newRow.innerHTML = `
-                <td>${escapeHTML(grade)}</td>
-                <td>${escapeHTML(subject)}</td>
-                <td>${escapeHTML(title)}</td>
-                <td><a href="#" class="download-btn" onclick="alert('Simulating download of uploaded file: ${escapeHTML(filename)}')">Download ${escapeHTML(extension)}</a></td>
-            `;
-
-            // Insert new row at the beginning of the table body list
-            tableBody.insertBefore(newRow, tableBody.firstChild);
-
-            // Clean up and reset form inputs
-            document.getElementById('uploadNotesForm').reset();
-            alert('Success! Your notes have been published to the study table below.');
-        }
-
-        // Helper function to prevent HTML injection/XSS
-        function escapeHTML(str) {
-            return str.replace(/[&<>'"]/g, 
-                tag => ({
-                    '&': '&amp;',
-                    '<': '&lt;',
-                    '>': '&gt;',
-                    "'": '&#39;',
-                    '"': '&quot;'
-                }[tag] || tag)
-            );
-        }
-    </script>
+  <!-- External JavaScript Logic -->
+  <script src="app.js" defer></script>
 </body>
+
 </html>
